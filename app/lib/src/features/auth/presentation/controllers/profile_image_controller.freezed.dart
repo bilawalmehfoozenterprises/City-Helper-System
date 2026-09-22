@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'profile_image_controller.dart';
@@ -9,6 +9,7 @@ part of 'profile_image_controller.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 /// @nodoc
@@ -25,16 +26,21 @@ $ProfileImageStateCopyWith<ProfileImageState> get copyWith => _$ProfileImageStat
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ProfileImageState&&(identical(other.imageFile, imageFile) || other.imageFile == imageFile)&&(identical(other.imageRemoved, imageRemoved) || other.imageRemoved == imageRemoved));
+  final _this = this as ProfileImageState;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is ProfileImageState&&(identical(other.imageFile, _this.imageFile) || other.imageFile == _this.imageFile)&&(identical(other.imageRemoved, _this.imageRemoved) || other.imageRemoved == _this.imageRemoved));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,imageFile,imageRemoved);
+int get hashCode {
+  final _this = this as ProfileImageState;
+  return Object.hash(runtimeType,_this.imageFile,_this.imageRemoved);
+}
 
 @override
 String toString() {
-  return 'ProfileImageState(imageFile: $imageFile, imageRemoved: $imageRemoved)';
+  final _this = this as ProfileImageState;
+  return 'ProfileImageState(imageFile: ${_this.imageFile}, imageRemoved: ${_this.imageRemoved})';
 }
 
 
@@ -63,7 +69,7 @@ class _$ProfileImageStateCopyWithImpl<$Res>
 /// Create a copy of ProfileImageState
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') @override $Res call({Object? imageFile = freezed,Object? imageRemoved = null,}) {
-  return _then(_self.copyWith(
+  return _then(ProfileImageState(
 imageFile: freezed == imageFile ? _self.imageFile : imageFile // ignore: cast_nullable_to_non_nullable
 as XFile?,imageRemoved: null == imageRemoved ? _self.imageRemoved : imageRemoved // ignore: cast_nullable_to_non_nullable
 as bool,
@@ -223,16 +229,18 @@ _$ProfileImageStateCopyWith<_ProfileImageState> get copyWith => __$ProfileImageS
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ProfileImageState&&(identical(other.imageFile, imageFile) || other.imageFile == imageFile)&&(identical(other.imageRemoved, imageRemoved) || other.imageRemoved == imageRemoved));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _ProfileImageState&&(identical(other.imageFile, imageFile) || other.imageFile == imageFile)&&(identical(other.imageRemoved, imageRemoved) || other.imageRemoved == imageRemoved));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,imageFile,imageRemoved);
+int get hashCode {
+    return Object.hash(runtimeType,imageFile,imageRemoved);
+}
 
 @override
 String toString() {
-  return 'ProfileImageState(imageFile: $imageFile, imageRemoved: $imageRemoved)';
+    return 'ProfileImageState(imageFile: $imageFile, imageRemoved: $imageRemoved)';
 }
 
 

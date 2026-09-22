@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'sub_category.dart';
@@ -9,6 +9,7 @@ part of 'sub_category.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 
@@ -28,16 +29,21 @@ $SubCategoryCopyWith<SubCategory> get copyWith => _$SubCategoryCopyWithImpl<SubC
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is SubCategory&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
+  final _this = this as SubCategory;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is SubCategory&&(identical(other.categoryId, _this.categoryId) || other.categoryId == _this.categoryId)&&(identical(other.id, _this.id) || other.id == _this.id)&&(identical(other.name, _this.name) || other.name == _this.name)&&(identical(other.sortOrder, _this.sortOrder) || other.sortOrder == _this.sortOrder));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,categoryId,id,name,sortOrder);
+int get hashCode {
+  final _this = this as SubCategory;
+  return Object.hash(runtimeType,_this.categoryId,_this.id,_this.name,_this.sortOrder);
+}
 
 @override
 String toString() {
-  return 'SubCategory(categoryId: $categoryId, id: $id, name: $name, sortOrder: $sortOrder)';
+  final _this = this as SubCategory;
+  return 'SubCategory(categoryId: ${_this.categoryId}, id: ${_this.id}, name: ${_this.name}, sortOrder: ${_this.sortOrder})';
 }
 
 
@@ -66,7 +72,7 @@ class _$SubCategoryCopyWithImpl<$Res>
 /// Create a copy of SubCategory
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') @override $Res call({Object? categoryId = null,Object? id = null,Object? name = null,Object? sortOrder = null,}) {
-  return _then(_self.copyWith(
+  return _then(SubCategory(
 categoryId: null == categoryId ? _self.categoryId : categoryId // ignore: cast_nullable_to_non_nullable
 as CategoryId,id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as CategoryId,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
@@ -233,16 +239,18 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _SubCategory&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _SubCategory&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,categoryId,id,name,sortOrder);
+int get hashCode {
+    return Object.hash(runtimeType,categoryId,id,name,sortOrder);
+}
 
 @override
 String toString() {
-  return 'SubCategory(categoryId: $categoryId, id: $id, name: $name, sortOrder: $sortOrder)';
+    return 'SubCategory(categoryId: $categoryId, id: $id, name: $name, sortOrder: $sortOrder)';
 }
 
 

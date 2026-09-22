@@ -34,9 +34,10 @@ import 'package:app/src/features/startup/presentation/widgets/fake_map_widget.da
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+
 extension AppBootstrapFakes on AppBootStrap {
   ProviderContainer createFakeProviderContainer({
-    List<Override> overrides = const [],
+    List<dynamic> overrides = const [],
   }) {
     final userLocationRepository = FakeUserLocationRepository();
     final geoLocatorRepository = FakeGeoLocatorRepository();
@@ -89,7 +90,7 @@ extension AppBootstrapFakes on AppBootStrap {
         userRepositoryProvider.overrideWithValue(userRepository),
         inMemoryImageStorageProvider.overrideWithValue(inMemoryStorage),
         authServiceProvider.overrideWithValue(authService),
-        ...overrides, // Place test-specific overrides last to ensure precedence
+        ...overrides.cast(), // Place test-specific overrides last to ensure precedence
       ],
       observers: [
         // * This observer logs all AsyncError states that are set by the controllers

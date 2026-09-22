@@ -8,7 +8,6 @@ import 'package:app/src/features/auth/data/image_upload_repository.dart';
 import 'package:app/src/features/auth/data/user_repository.dart';
 import 'package:app/src/features/auth/domain/app_user.dart';
 import 'package:app/src/features/auth/domain/auth_exceptions.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -16,14 +15,14 @@ part 'auth_service.g.dart';
 
 class AuthService {
   const AuthService(this.ref);
-  final Ref ref;
+  final Ref? ref;
 
   Future<String> uploadUserProfileImage(
     Uint8List imageBytes,
     UserId userId,
   ) async {
     try {
-      return await ref
+      return await ref!
           .read(imageUploadRepositoryProvider)
           .uploadUserProfileImage(imageBytes: imageBytes, userId: userId);
     } catch (e, st) {
@@ -42,12 +41,12 @@ class AuthService {
     Uint8List? profileImageBytes,
     LatLng? location,
   }) async {
-    final user = ref.read(authRepositoryProvider).currentUser;
+    final user = ref!.read(authRepositoryProvider).currentUser;
     if (user == null) {
       throw UserNotAuthenticatedException();
     }
 
-    final defaultLocation = ref.read(defaultLocationProvider);
+    final defaultLocation = ref!.read(defaultLocationProvider);
 
     String? imageUrl;
     if (profileImageBytes != null) {
@@ -62,7 +61,7 @@ class AuthService {
       lastLocation: location ?? defaultLocation,
     );
 
-    await ref.read(userRepositoryProvider).createUserProfile(user: appUser);
+    await ref!.read(userRepositoryProvider).createUserProfile(user: appUser);
   }
 
   Future<void> updateUserProfile({
@@ -71,7 +70,7 @@ class AuthService {
     LatLng? location,
     bool removeProfileImage = false,
   }) async {
-    final user = ref.read(authRepositoryProvider).currentUser;
+    final user = ref!.read(authRepositoryProvider).currentUser;
     if (user == null) {
       throw UserNotAuthenticatedException();
     }
@@ -79,7 +78,7 @@ class AuthService {
     String? imageUrl;
 
     if (removeProfileImage) {
-      await ref
+      await ref!
           .read(imageUploadRepositoryProvider)
           .deleteProfileImage(user.uid);
       imageUrl = null;
@@ -87,7 +86,7 @@ class AuthService {
       imageUrl = await uploadUserProfileImage(profileImageBytes, user.uid);
     }
 
-    await ref
+    await ref!
         .read(userRepositoryProvider)
         .updateUserProfile(
           uid: user.uid,
@@ -99,11 +98,11 @@ class AuthService {
   }
 
   Future<void> deleteAccount() async {
-    final user = ref.read(authRepositoryProvider).currentUser;
+    final user = ref!.read(authRepositoryProvider).currentUser;
     if (user == null) {
       throw UserNotAuthenticatedException();
     }
-    await ref.read(authRepositoryProvider).deleteAccount();
+    await ref!.read(authRepositoryProvider).deleteAccount();
   }
 }
 

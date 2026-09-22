@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'opening_hours.dart';
@@ -9,6 +9,7 @@ part of 'opening_hours.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 
@@ -28,16 +29,21 @@ $OpeningHoursCopyWith<OpeningHours> get copyWith => _$OpeningHoursCopyWithImpl<O
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is OpeningHours&&(identical(other.isDayOff, isDayOff) || other.isDayOff == isDayOff)&&(identical(other.is24Hours, is24Hours) || other.is24Hours == is24Hours)&&const DeepCollectionEquality().equals(other.slots, slots));
+  final _this = this as OpeningHours;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is OpeningHours&&(identical(other.isDayOff, _this.isDayOff) || other.isDayOff == _this.isDayOff)&&(identical(other.is24Hours, _this.is24Hours) || other.is24Hours == _this.is24Hours)&&const DeepCollectionEquality().equals(other.slots, _this.slots));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,isDayOff,is24Hours,const DeepCollectionEquality().hash(slots));
+int get hashCode {
+  final _this = this as OpeningHours;
+  return Object.hash(runtimeType,_this.isDayOff,_this.is24Hours,const DeepCollectionEquality().hash(_this.slots));
+}
 
 @override
 String toString() {
-  return 'OpeningHours(isDayOff: $isDayOff, is24Hours: $is24Hours, slots: $slots)';
+  final _this = this as OpeningHours;
+  return 'OpeningHours(isDayOff: ${_this.isDayOff}, is24Hours: ${_this.is24Hours}, slots: ${_this.slots})';
 }
 
 
@@ -66,7 +72,7 @@ class _$OpeningHoursCopyWithImpl<$Res>
 /// Create a copy of OpeningHours
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') @override $Res call({Object? isDayOff = null,Object? is24Hours = null,Object? slots = freezed,}) {
-  return _then(_self.copyWith(
+  return _then(OpeningHours(
 isDayOff: null == isDayOff ? _self.isDayOff : isDayOff // ignore: cast_nullable_to_non_nullable
 as bool,is24Hours: null == is24Hours ? _self.is24Hours : is24Hours // ignore: cast_nullable_to_non_nullable
 as bool,slots: freezed == slots ? _self.slots : slots // ignore: cast_nullable_to_non_nullable
@@ -211,7 +217,7 @@ return $default(_that.isDayOff,_that.is24Hours,_that.slots);case _:
 
 @JsonSerializable(explicitToJson: true)
 class _OpeningHours implements OpeningHours {
-  const _OpeningHours({this.isDayOff = false, this.is24Hours = false, final  List<TimeSlot>? slots}): _slots = slots;
+  const _OpeningHours({this.isDayOff = false, this.is24Hours = false,  List<TimeSlot>? slots}): _slots = slots;
   factory _OpeningHours.fromJson(Map<String, dynamic> json) => _$OpeningHoursFromJson(json);
 
 @override@JsonKey() final  bool isDayOff;
@@ -239,16 +245,18 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _OpeningHours&&(identical(other.isDayOff, isDayOff) || other.isDayOff == isDayOff)&&(identical(other.is24Hours, is24Hours) || other.is24Hours == is24Hours)&&const DeepCollectionEquality().equals(other._slots, _slots));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _OpeningHours&&(identical(other.isDayOff, isDayOff) || other.isDayOff == isDayOff)&&(identical(other.is24Hours, is24Hours) || other.is24Hours == is24Hours)&&const DeepCollectionEquality().equals(other.slots, _slots));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,isDayOff,is24Hours,const DeepCollectionEquality().hash(_slots));
+int get hashCode {
+    return Object.hash(runtimeType,isDayOff,is24Hours,const DeepCollectionEquality().hash(_slots));
+}
 
 @override
 String toString() {
-  return 'OpeningHours(isDayOff: $isDayOff, is24Hours: $is24Hours, slots: $slots)';
+    return 'OpeningHours(isDayOff: $isDayOff, is24Hours: $is24Hours, slots: $slots)';
 }
 
 

@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'shop_form.dart';
@@ -9,19 +9,13 @@ part of 'shop_form.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$ShopForm {
 
-// Step 1: Basic Details
- Category? get category; SubCategory? get subCategory; String get name; String get description; ListingType? get listingType;// Step 2: Location Info
- String get cityName; String get sectorName; String get streetAddress; LatLng? get latLng;// Step 3: Contact & Social Links
- String get phoneNumber; String get waNumber; String get email; String get facebookUrl; String get instagramUrl; String get websiteUrl;// Step 4: Business Specific Info
- Map<DayOfWeek, OpeningHours>? get openingHours; Pricing? get pricing; bool get isFurnished; GenderPreference? get genderPref; bool get isRoomAvailable;// Step 5: Media Uploads
- Uint8List? get coverImageBytes; List<Uint8List> get galleryImageBytes; List<String> get galleryUrlsToDelete; List<Uint8List> get menuImageBytes; List<String> get menuUrlsToDelete;// For editing
-// For validation based on existing images
- String? get initialCoverUrl; List<String> get initialGalleryUrls; List<String> get initialMenuUrls;
+ Category? get category; SubCategory? get subCategory; String get name; String get description; ListingType? get listingType; String get cityName; String get sectorName; String get streetAddress; LatLng? get latLng; String get phoneNumber; String get waNumber; String get email; String get facebookUrl; String get instagramUrl; String get websiteUrl; Map<DayOfWeek, OpeningHours>? get openingHours; Pricing? get pricing; bool get isFurnished; GenderPreference? get genderPref; bool get isRoomAvailable; Uint8List? get coverImageBytes; List<Uint8List> get galleryImageBytes; List<String> get galleryUrlsToDelete; List<Uint8List> get menuImageBytes; List<String> get menuUrlsToDelete; String? get initialCoverUrl; List<String> get initialGalleryUrls; List<String> get initialMenuUrls;
 /// Create a copy of ShopForm
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -32,16 +26,21 @@ $ShopFormCopyWith<ShopForm> get copyWith => _$ShopFormCopyWithImpl<ShopForm>(thi
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ShopForm&&(identical(other.category, category) || other.category == category)&&(identical(other.subCategory, subCategory) || other.subCategory == subCategory)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.listingType, listingType) || other.listingType == listingType)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&const DeepCollectionEquality().equals(other.openingHours, openingHours)&&(identical(other.pricing, pricing) || other.pricing == pricing)&&(identical(other.isFurnished, isFurnished) || other.isFurnished == isFurnished)&&(identical(other.genderPref, genderPref) || other.genderPref == genderPref)&&(identical(other.isRoomAvailable, isRoomAvailable) || other.isRoomAvailable == isRoomAvailable)&&const DeepCollectionEquality().equals(other.coverImageBytes, coverImageBytes)&&const DeepCollectionEquality().equals(other.galleryImageBytes, galleryImageBytes)&&const DeepCollectionEquality().equals(other.galleryUrlsToDelete, galleryUrlsToDelete)&&const DeepCollectionEquality().equals(other.menuImageBytes, menuImageBytes)&&const DeepCollectionEquality().equals(other.menuUrlsToDelete, menuUrlsToDelete)&&(identical(other.initialCoverUrl, initialCoverUrl) || other.initialCoverUrl == initialCoverUrl)&&const DeepCollectionEquality().equals(other.initialGalleryUrls, initialGalleryUrls)&&const DeepCollectionEquality().equals(other.initialMenuUrls, initialMenuUrls));
+  final _this = this as ShopForm;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is ShopForm&&(identical(other.category, _this.category) || other.category == _this.category)&&(identical(other.subCategory, _this.subCategory) || other.subCategory == _this.subCategory)&&(identical(other.name, _this.name) || other.name == _this.name)&&(identical(other.description, _this.description) || other.description == _this.description)&&(identical(other.listingType, _this.listingType) || other.listingType == _this.listingType)&&(identical(other.cityName, _this.cityName) || other.cityName == _this.cityName)&&(identical(other.sectorName, _this.sectorName) || other.sectorName == _this.sectorName)&&(identical(other.streetAddress, _this.streetAddress) || other.streetAddress == _this.streetAddress)&&(identical(other.latLng, _this.latLng) || other.latLng == _this.latLng)&&(identical(other.phoneNumber, _this.phoneNumber) || other.phoneNumber == _this.phoneNumber)&&(identical(other.waNumber, _this.waNumber) || other.waNumber == _this.waNumber)&&(identical(other.email, _this.email) || other.email == _this.email)&&(identical(other.facebookUrl, _this.facebookUrl) || other.facebookUrl == _this.facebookUrl)&&(identical(other.instagramUrl, _this.instagramUrl) || other.instagramUrl == _this.instagramUrl)&&(identical(other.websiteUrl, _this.websiteUrl) || other.websiteUrl == _this.websiteUrl)&&const DeepCollectionEquality().equals(other.openingHours, _this.openingHours)&&(identical(other.pricing, _this.pricing) || other.pricing == _this.pricing)&&(identical(other.isFurnished, _this.isFurnished) || other.isFurnished == _this.isFurnished)&&(identical(other.genderPref, _this.genderPref) || other.genderPref == _this.genderPref)&&(identical(other.isRoomAvailable, _this.isRoomAvailable) || other.isRoomAvailable == _this.isRoomAvailable)&&const DeepCollectionEquality().equals(other.coverImageBytes, _this.coverImageBytes)&&const DeepCollectionEquality().equals(other.galleryImageBytes, _this.galleryImageBytes)&&const DeepCollectionEquality().equals(other.galleryUrlsToDelete, _this.galleryUrlsToDelete)&&const DeepCollectionEquality().equals(other.menuImageBytes, _this.menuImageBytes)&&const DeepCollectionEquality().equals(other.menuUrlsToDelete, _this.menuUrlsToDelete)&&(identical(other.initialCoverUrl, _this.initialCoverUrl) || other.initialCoverUrl == _this.initialCoverUrl)&&const DeepCollectionEquality().equals(other.initialGalleryUrls, _this.initialGalleryUrls)&&const DeepCollectionEquality().equals(other.initialMenuUrls, _this.initialMenuUrls));
 }
 
 
 @override
-int get hashCode => Object.hashAll([runtimeType,category,subCategory,name,description,listingType,cityName,sectorName,streetAddress,latLng,phoneNumber,waNumber,email,facebookUrl,instagramUrl,websiteUrl,const DeepCollectionEquality().hash(openingHours),pricing,isFurnished,genderPref,isRoomAvailable,const DeepCollectionEquality().hash(coverImageBytes),const DeepCollectionEquality().hash(galleryImageBytes),const DeepCollectionEquality().hash(galleryUrlsToDelete),const DeepCollectionEquality().hash(menuImageBytes),const DeepCollectionEquality().hash(menuUrlsToDelete),initialCoverUrl,const DeepCollectionEquality().hash(initialGalleryUrls),const DeepCollectionEquality().hash(initialMenuUrls)]);
+int get hashCode {
+  final _this = this as ShopForm;
+  return Object.hashAll([runtimeType,_this.category,_this.subCategory,_this.name,_this.description,_this.listingType,_this.cityName,_this.sectorName,_this.streetAddress,_this.latLng,_this.phoneNumber,_this.waNumber,_this.email,_this.facebookUrl,_this.instagramUrl,_this.websiteUrl,const DeepCollectionEquality().hash(_this.openingHours),_this.pricing,_this.isFurnished,_this.genderPref,_this.isRoomAvailable,const DeepCollectionEquality().hash(_this.coverImageBytes),const DeepCollectionEquality().hash(_this.galleryImageBytes),const DeepCollectionEquality().hash(_this.galleryUrlsToDelete),const DeepCollectionEquality().hash(_this.menuImageBytes),const DeepCollectionEquality().hash(_this.menuUrlsToDelete),_this.initialCoverUrl,const DeepCollectionEquality().hash(_this.initialGalleryUrls),const DeepCollectionEquality().hash(_this.initialMenuUrls)]);
+}
 
 @override
 String toString() {
-  return 'ShopForm(category: $category, subCategory: $subCategory, name: $name, description: $description, listingType: $listingType, cityName: $cityName, sectorName: $sectorName, streetAddress: $streetAddress, latLng: $latLng, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, facebookUrl: $facebookUrl, instagramUrl: $instagramUrl, websiteUrl: $websiteUrl, openingHours: $openingHours, pricing: $pricing, isFurnished: $isFurnished, genderPref: $genderPref, isRoomAvailable: $isRoomAvailable, coverImageBytes: $coverImageBytes, galleryImageBytes: $galleryImageBytes, galleryUrlsToDelete: $galleryUrlsToDelete, menuImageBytes: $menuImageBytes, menuUrlsToDelete: $menuUrlsToDelete, initialCoverUrl: $initialCoverUrl, initialGalleryUrls: $initialGalleryUrls, initialMenuUrls: $initialMenuUrls)';
+  final _this = this as ShopForm;
+  return 'ShopForm(category: ${_this.category}, subCategory: ${_this.subCategory}, name: ${_this.name}, description: ${_this.description}, listingType: ${_this.listingType}, cityName: ${_this.cityName}, sectorName: ${_this.sectorName}, streetAddress: ${_this.streetAddress}, latLng: ${_this.latLng}, phoneNumber: ${_this.phoneNumber}, waNumber: ${_this.waNumber}, email: ${_this.email}, facebookUrl: ${_this.facebookUrl}, instagramUrl: ${_this.instagramUrl}, websiteUrl: ${_this.websiteUrl}, openingHours: ${_this.openingHours}, pricing: ${_this.pricing}, isFurnished: ${_this.isFurnished}, genderPref: ${_this.genderPref}, isRoomAvailable: ${_this.isRoomAvailable}, coverImageBytes: ${_this.coverImageBytes}, galleryImageBytes: ${_this.galleryImageBytes}, galleryUrlsToDelete: ${_this.galleryUrlsToDelete}, menuImageBytes: ${_this.menuImageBytes}, menuUrlsToDelete: ${_this.menuUrlsToDelete}, initialCoverUrl: ${_this.initialCoverUrl}, initialGalleryUrls: ${_this.initialGalleryUrls}, initialMenuUrls: ${_this.initialMenuUrls})';
 }
 
 
@@ -70,7 +69,7 @@ class _$ShopFormCopyWithImpl<$Res>
 /// Create a copy of ShopForm
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') @override $Res call({Object? category = freezed,Object? subCategory = freezed,Object? name = null,Object? description = null,Object? listingType = freezed,Object? cityName = null,Object? sectorName = null,Object? streetAddress = null,Object? latLng = freezed,Object? phoneNumber = null,Object? waNumber = null,Object? email = null,Object? facebookUrl = null,Object? instagramUrl = null,Object? websiteUrl = null,Object? openingHours = freezed,Object? pricing = freezed,Object? isFurnished = null,Object? genderPref = freezed,Object? isRoomAvailable = null,Object? coverImageBytes = freezed,Object? galleryImageBytes = null,Object? galleryUrlsToDelete = null,Object? menuImageBytes = null,Object? menuUrlsToDelete = null,Object? initialCoverUrl = freezed,Object? initialGalleryUrls = null,Object? initialMenuUrls = null,}) {
-  return _then(_self.copyWith(
+  return _then(ShopForm(
 category: freezed == category ? _self.category : category // ignore: cast_nullable_to_non_nullable
 as Category?,subCategory: freezed == subCategory ? _self.subCategory : subCategory // ignore: cast_nullable_to_non_nullable
 as SubCategory?,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
@@ -276,30 +275,25 @@ return $default(_that.category,_that.subCategory,_that.name,_that.description,_t
 
 
 class _ShopForm implements ShopForm {
-  const _ShopForm({this.category, this.subCategory, required this.name, required this.description, this.listingType, required this.cityName, required this.sectorName, required this.streetAddress, required this.latLng, required this.phoneNumber, required this.waNumber, required this.email, required this.facebookUrl, required this.instagramUrl, required this.websiteUrl, final  Map<DayOfWeek, OpeningHours>? openingHours, this.pricing, required this.isFurnished, this.genderPref, this.isRoomAvailable = true, this.coverImageBytes, final  List<Uint8List> galleryImageBytes = const [], final  List<String> galleryUrlsToDelete = const [], final  List<Uint8List> menuImageBytes = const [], final  List<String> menuUrlsToDelete = const [], this.initialCoverUrl, final  List<String> initialGalleryUrls = const [], final  List<String> initialMenuUrls = const []}): _openingHours = openingHours,_galleryImageBytes = galleryImageBytes,_galleryUrlsToDelete = galleryUrlsToDelete,_menuImageBytes = menuImageBytes,_menuUrlsToDelete = menuUrlsToDelete,_initialGalleryUrls = initialGalleryUrls,_initialMenuUrls = initialMenuUrls;
+  const _ShopForm({this.category, this.subCategory, required this.name, required this.description, this.listingType, required this.cityName, required this.sectorName, required this.streetAddress, required this.latLng, required this.phoneNumber, required this.waNumber, required this.email, required this.facebookUrl, required this.instagramUrl, required this.websiteUrl,  Map<DayOfWeek, OpeningHours>? openingHours, this.pricing, required this.isFurnished, this.genderPref, this.isRoomAvailable = true, this.coverImageBytes,  List<Uint8List> galleryImageBytes = const [],  List<String> galleryUrlsToDelete = const [],  List<Uint8List> menuImageBytes = const [],  List<String> menuUrlsToDelete = const [], this.initialCoverUrl,  List<String> initialGalleryUrls = const [],  List<String> initialMenuUrls = const []}): _openingHours = openingHours,_galleryImageBytes = galleryImageBytes,_galleryUrlsToDelete = galleryUrlsToDelete,_menuImageBytes = menuImageBytes,_menuUrlsToDelete = menuUrlsToDelete,_initialGalleryUrls = initialGalleryUrls,_initialMenuUrls = initialMenuUrls;
   
 
-// Step 1: Basic Details
 @override final  Category? category;
 @override final  SubCategory? subCategory;
 @override final  String name;
 @override final  String description;
 @override final  ListingType? listingType;
-// Step 2: Location Info
 @override final  String cityName;
 @override final  String sectorName;
 @override final  String streetAddress;
 @override final  LatLng? latLng;
-// Step 3: Contact & Social Links
 @override final  String phoneNumber;
 @override final  String waNumber;
 @override final  String email;
 @override final  String facebookUrl;
 @override final  String instagramUrl;
 @override final  String websiteUrl;
-// Step 4: Business Specific Info
  final  Map<DayOfWeek, OpeningHours>? _openingHours;
-// Step 4: Business Specific Info
 @override Map<DayOfWeek, OpeningHours>? get openingHours {
   final value = _openingHours;
   if (value == null) return null;
@@ -312,7 +306,6 @@ class _ShopForm implements ShopForm {
 @override final  bool isFurnished;
 @override final  GenderPreference? genderPref;
 @override@JsonKey() final  bool isRoomAvailable;
-// Step 5: Media Uploads
 @override final  Uint8List? coverImageBytes;
  final  List<Uint8List> _galleryImageBytes;
 @override@JsonKey() List<Uint8List> get galleryImageBytes {
@@ -342,8 +335,6 @@ class _ShopForm implements ShopForm {
   return EqualUnmodifiableListView(_menuUrlsToDelete);
 }
 
-// For editing
-// For validation based on existing images
 @override final  String? initialCoverUrl;
  final  List<String> _initialGalleryUrls;
 @override@JsonKey() List<String> get initialGalleryUrls {
@@ -370,16 +361,18 @@ _$ShopFormCopyWith<_ShopForm> get copyWith => __$ShopFormCopyWithImpl<_ShopForm>
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ShopForm&&(identical(other.category, category) || other.category == category)&&(identical(other.subCategory, subCategory) || other.subCategory == subCategory)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.listingType, listingType) || other.listingType == listingType)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&const DeepCollectionEquality().equals(other._openingHours, _openingHours)&&(identical(other.pricing, pricing) || other.pricing == pricing)&&(identical(other.isFurnished, isFurnished) || other.isFurnished == isFurnished)&&(identical(other.genderPref, genderPref) || other.genderPref == genderPref)&&(identical(other.isRoomAvailable, isRoomAvailable) || other.isRoomAvailable == isRoomAvailable)&&const DeepCollectionEquality().equals(other.coverImageBytes, coverImageBytes)&&const DeepCollectionEquality().equals(other._galleryImageBytes, _galleryImageBytes)&&const DeepCollectionEquality().equals(other._galleryUrlsToDelete, _galleryUrlsToDelete)&&const DeepCollectionEquality().equals(other._menuImageBytes, _menuImageBytes)&&const DeepCollectionEquality().equals(other._menuUrlsToDelete, _menuUrlsToDelete)&&(identical(other.initialCoverUrl, initialCoverUrl) || other.initialCoverUrl == initialCoverUrl)&&const DeepCollectionEquality().equals(other._initialGalleryUrls, _initialGalleryUrls)&&const DeepCollectionEquality().equals(other._initialMenuUrls, _initialMenuUrls));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _ShopForm&&(identical(other.category, category) || other.category == category)&&(identical(other.subCategory, subCategory) || other.subCategory == subCategory)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.listingType, listingType) || other.listingType == listingType)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&const DeepCollectionEquality().equals(other.openingHours, _openingHours)&&(identical(other.pricing, pricing) || other.pricing == pricing)&&(identical(other.isFurnished, isFurnished) || other.isFurnished == isFurnished)&&(identical(other.genderPref, genderPref) || other.genderPref == genderPref)&&(identical(other.isRoomAvailable, isRoomAvailable) || other.isRoomAvailable == isRoomAvailable)&&const DeepCollectionEquality().equals(other.coverImageBytes, coverImageBytes)&&const DeepCollectionEquality().equals(other.galleryImageBytes, _galleryImageBytes)&&const DeepCollectionEquality().equals(other.galleryUrlsToDelete, _galleryUrlsToDelete)&&const DeepCollectionEquality().equals(other.menuImageBytes, _menuImageBytes)&&const DeepCollectionEquality().equals(other.menuUrlsToDelete, _menuUrlsToDelete)&&(identical(other.initialCoverUrl, initialCoverUrl) || other.initialCoverUrl == initialCoverUrl)&&const DeepCollectionEquality().equals(other.initialGalleryUrls, _initialGalleryUrls)&&const DeepCollectionEquality().equals(other.initialMenuUrls, _initialMenuUrls));
 }
 
 
 @override
-int get hashCode => Object.hashAll([runtimeType,category,subCategory,name,description,listingType,cityName,sectorName,streetAddress,latLng,phoneNumber,waNumber,email,facebookUrl,instagramUrl,websiteUrl,const DeepCollectionEquality().hash(_openingHours),pricing,isFurnished,genderPref,isRoomAvailable,const DeepCollectionEquality().hash(coverImageBytes),const DeepCollectionEquality().hash(_galleryImageBytes),const DeepCollectionEquality().hash(_galleryUrlsToDelete),const DeepCollectionEquality().hash(_menuImageBytes),const DeepCollectionEquality().hash(_menuUrlsToDelete),initialCoverUrl,const DeepCollectionEquality().hash(_initialGalleryUrls),const DeepCollectionEquality().hash(_initialMenuUrls)]);
+int get hashCode {
+    return Object.hashAll([runtimeType,category,subCategory,name,description,listingType,cityName,sectorName,streetAddress,latLng,phoneNumber,waNumber,email,facebookUrl,instagramUrl,websiteUrl,const DeepCollectionEquality().hash(_openingHours),pricing,isFurnished,genderPref,isRoomAvailable,const DeepCollectionEquality().hash(coverImageBytes),const DeepCollectionEquality().hash(_galleryImageBytes),const DeepCollectionEquality().hash(_galleryUrlsToDelete),const DeepCollectionEquality().hash(_menuImageBytes),const DeepCollectionEquality().hash(_menuUrlsToDelete),initialCoverUrl,const DeepCollectionEquality().hash(_initialGalleryUrls),const DeepCollectionEquality().hash(_initialMenuUrls)]);
+}
 
 @override
 String toString() {
-  return 'ShopForm(category: $category, subCategory: $subCategory, name: $name, description: $description, listingType: $listingType, cityName: $cityName, sectorName: $sectorName, streetAddress: $streetAddress, latLng: $latLng, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, facebookUrl: $facebookUrl, instagramUrl: $instagramUrl, websiteUrl: $websiteUrl, openingHours: $openingHours, pricing: $pricing, isFurnished: $isFurnished, genderPref: $genderPref, isRoomAvailable: $isRoomAvailable, coverImageBytes: $coverImageBytes, galleryImageBytes: $galleryImageBytes, galleryUrlsToDelete: $galleryUrlsToDelete, menuImageBytes: $menuImageBytes, menuUrlsToDelete: $menuUrlsToDelete, initialCoverUrl: $initialCoverUrl, initialGalleryUrls: $initialGalleryUrls, initialMenuUrls: $initialMenuUrls)';
+    return 'ShopForm(category: $category, subCategory: $subCategory, name: $name, description: $description, listingType: $listingType, cityName: $cityName, sectorName: $sectorName, streetAddress: $streetAddress, latLng: $latLng, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, facebookUrl: $facebookUrl, instagramUrl: $instagramUrl, websiteUrl: $websiteUrl, openingHours: $openingHours, pricing: $pricing, isFurnished: $isFurnished, genderPref: $genderPref, isRoomAvailable: $isRoomAvailable, coverImageBytes: $coverImageBytes, galleryImageBytes: $galleryImageBytes, galleryUrlsToDelete: $galleryUrlsToDelete, menuImageBytes: $menuImageBytes, menuUrlsToDelete: $menuUrlsToDelete, initialCoverUrl: $initialCoverUrl, initialGalleryUrls: $initialGalleryUrls, initialMenuUrls: $initialMenuUrls)';
 }
 
 

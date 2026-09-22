@@ -6,22 +6,46 @@ part of 'light_theme.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$lightThemeHash() => r'645628652bf9c840fb8a99005aad19e5d80e4565';
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
 
-/// See also [lightTheme].
 @ProviderFor(lightTheme)
-final lightThemeProvider = AutoDisposeProvider<ThemeData>.internal(
-  lightTheme,
-  name: r'lightThemeProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$lightThemeHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final lightThemeProvider = LightThemeProvider._();
 
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef LightThemeRef = AutoDisposeProviderRef<ThemeData>;
-// ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
+final class LightThemeProvider
+    extends $FunctionalProvider<ThemeData, ThemeData, ThemeData>
+    with $Provider<ThemeData> {
+  LightThemeProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'lightThemeProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$lightThemeHash();
+
+  @$internal
+  @override
+  $ProviderElement<ThemeData> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  ThemeData create(Ref ref) {
+    return lightTheme(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(ThemeData value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<ThemeData>(value),
+    );
+  }
+}
+
+String _$lightThemeHash() => r'645628652bf9c840fb8a99005aad19e5d80e4565';

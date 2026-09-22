@@ -9,7 +9,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'popular_entities_notifier.g.dart';
 
-@Riverpod(keepAlive: true)
+@Riverpod(keepAlive: true, name: 'popularEntitiesNotifierProvider')
 class PopularEntitiesNotifier extends _$PopularEntitiesNotifier {
   @override
   EntitiesPaginatedState build(CategoryId categoryId) {
@@ -55,7 +55,7 @@ class PopularEntitiesNotifier extends _$PopularEntitiesNotifier {
         hasMore: hasMore,
         isInitialLoading: false,
       );
-    } catch (e, _) {
+    } catch (e) {
       state = state.copyWith(paginationError: e, isInitialLoading: false);
     }
   }
@@ -93,7 +93,7 @@ class PopularEntitiesNotifier extends _$PopularEntitiesNotifier {
         entities: [...state.entities, ...newEntities],
         hasMore: hasMore,
       );
-    } catch (e, _) {
+    } catch (e) {
       state = state.copyWith(isLoadingNextPage: false, paginationError: e);
     }
   }
