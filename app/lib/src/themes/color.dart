@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 
-// * Light Theme Colors
-const kGreenColor = Color.fromRGBO(76, 217, 100, 1);
-const kWhiteColor = Colors.white;
-const kDarkGreyColor = Color.fromARGB(221, 94, 94, 94);
-const kLightGreyColor = Color.fromARGB(255, 238, 238, 238);
-const kBlackColor = Colors.black;
-const kRedColor = Color.fromRGBO(207, 28, 12, 1);
-const surfaceColor = Color.fromRGBO(242, 242, 242, 1);
-const imageBackgroundColor = Color.fromRGBO(196, 196, 196, 1);
+// Hostel discovery theme tokens.
+const kCharcoalColor = Color(0xFF1B1B1A);
+const kWhiteColor = Color(0xFFFFFFFF);
+const kCanvasColor = Color(0xFFF8F8F6);
+const kDarkGreyColor = Color(0xFF5F625E);
+const kLightGreyColor = Color(0xFFE9E9E5);
+const kBlackColor = Color(0xFF111210);
+const kAmberColor = Color(0xFFF1A33C);
+const kRedColor = Color(0xFFD64535);
+const surfaceColor = Color(0xFFF2F2EF);
+const imageBackgroundColor = Color(0xFFD4D4CE);
 
-const darkGreyColor = Color.fromRGBO(212, 218, 226, 1);
-const lightGreyColor = Color.fromRGBO(197, 201, 206, 1);
+const darkGreyColor = Color(0xFF777A74);
+const lightGreyColor = Color(0xFFDADBD5);
 
-const amberColor = Colors.amber;
+// Kept as an alias for existing widgets while the component layer is rebuilt.
+const amberColor = kAmberColor;

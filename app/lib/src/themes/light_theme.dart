@@ -6,66 +6,108 @@ import 'color.dart';
 
 part 'light_theme.g.dart';
 
-class AppColors {
-  AppColors._();
-  static const greenColor = Color.fromRGBO(76, 217, 100, 1);
-  static const darkGreyColor = Color.fromARGB(255, 82, 82, 82);
-}
-
 @riverpod
 ThemeData lightTheme(Ref ref) {
   final fontFamily = ref.watch(fontFamilyProvider);
   final themeData = ThemeData.light(useMaterial3: true);
+  final colorScheme =
+      ColorScheme.fromSeed(
+        seedColor: kCharcoalColor,
+        brightness: Brightness.light,
+      ).copyWith(
+        primary: kCharcoalColor,
+        onPrimary: kWhiteColor,
+        secondary: kAmberColor,
+        onSecondary: kBlackColor,
+        surface: kWhiteColor,
+        surfaceContainerLowest: kCanvasColor,
+        surfaceContainerLow: kCanvasColor,
+        surfaceContainer: kLightGreyColor,
+        onSurface: kBlackColor,
+        onSurfaceVariant: kDarkGreyColor,
+        outline: lightGreyColor,
+        error: kRedColor,
+      );
+
   return themeData.copyWith(
-    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.greenColor).copyWith(tertiary: amberColor),
+    colorScheme: colorScheme,
+    scaffoldBackgroundColor: kCanvasColor,
+    dividerColor: lightGreyColor,
     textTheme: _textThemeLight(themeData, fontFamily),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: kCanvasColor,
+      foregroundColor: kBlackColor,
+      elevation: 0,
+      centerTitle: false,
+    ),
+    cardTheme: CardThemeData(
+      color: kWhiteColor,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: const BorderSide(color: lightGreyColor),
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: kWhiteColor,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: const BorderSide(color: lightGreyColor),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: const BorderSide(color: lightGreyColor),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: const BorderSide(color: kCharcoalColor, width: 1.5),
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: kCharcoalColor,
+        foregroundColor: kWhiteColor,
+        elevation: 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        minimumSize: const Size(48, 48),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        foregroundColor: kCharcoalColor,
+        side: const BorderSide(color: lightGreyColor),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        minimumSize: const Size(48, 48),
+      ),
+    ),
   );
 }
 
 TextTheme _textThemeLight(ThemeData themeData, String fontFamily) {
   final textTheme = themeData.textTheme;
-  TextStyle? grey(TextStyle? style) =>
-      style?.copyWith(color: AppColors.darkGreyColor);
+  TextStyle? grey(TextStyle? style) => style?.copyWith(color: kDarkGreyColor);
 
   return textTheme
       .copyWith(
+        displayLarge: textTheme.displayLarge?.copyWith(
+          color: kBlackColor,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -1.2,
+        ),
+        headlineLarge: textTheme.headlineLarge?.copyWith(
+          color: kBlackColor,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.6,
+        ),
+        titleLarge: textTheme.titleLarge?.copyWith(
+          color: kBlackColor,
+          fontWeight: FontWeight.w700,
+        ),
+        bodyLarge: textTheme.bodyLarge?.copyWith(color: kBlackColor),
         labelLarge: grey(textTheme.labelLarge),
         labelMedium: grey(textTheme.labelMedium),
         labelSmall: grey(textTheme.labelSmall),
       )
       .apply(fontFamily: fontFamily);
 }
-
-// TODO: Remove themeData if not needed
-// return themeData.copyWith(
-  //   colorScheme: _colorSchemeLight(themeData),
-  //   textTheme: _textThemeLight(themeData, fontFamily),
-  //   scaffoldBackgroundColor: kWhiteColor,
-  //   searchBarTheme: _searchBarThemeLight(themeData),
-  //   chipTheme: themeData.chipTheme.copyWith(
-  //     backgroundColor: kLightGreyColor,
-  //     selectedColor: kGreenColor,
-  //     secondarySelectedColor: kGreenColor,
-  //     labelStyle: themeData.textTheme.labelSmall,
-  //     secondaryLabelStyle: themeData.textTheme.labelSmall,
-  //     side: BorderSide(color: kBlackColor),
-  //   ),
-  // );
-// ColorScheme _colorSchemeLight(ThemeData lightTheme) {
-//   return lightTheme.colorScheme.copyWith(
-//     primary: kGreenColor,
-//     primaryContainer: kGreenColor,
-//     onPrimaryContainer: Colors.white,
-//     surface: kWhiteColor,
-//     // For SearchBar
-//     surfaceContainerLow: kLightGreyColor,
-//     surfaceContainerHigh: kWhiteColor,
-//     onSurface: kBlackColor,
-//     // For labels
-//     onSurfaceVariant: kDarkGreyColor,
-//   );
-// }
-// SearchBarThemeData _searchBarThemeLight(ThemeData themeData) {
-//   final theme = themeData.searchBarTheme;
-//   return theme.copyWith(elevation: WidgetStatePropertyAll(3));
-// }

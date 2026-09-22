@@ -20,8 +20,6 @@ import 'package:app/src/routers/redirection.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:app/src/features/startup/data/real/user_location_repository.dart';
-import 'package:app/src/features/startup/presentation/startup_screen.dart';
 import 'package:app/src/features/startup/presentation/pick_location_screen.dart';
 import 'package:app/src/routers/not_found_screen.dart';
 import 'package:app/src/features/legal/presentation/terms_of_service_page.dart';
@@ -30,7 +28,6 @@ import 'package:app/src/features/legal/presentation/privacy_policy_page.dart';
 part 'app_router.g.dart';
 
 enum AppRoute {
-  getStarted,
   termsOfService,
   privacyPolicy,
   pickYourLocation,
@@ -55,13 +52,6 @@ enum AppRoute {
 @riverpod
 GoRouter appRouter(Ref ref) {
   late GoRouter router;
-  // Determine the initial route based on the user location state.
-  final userLocation = ref.watch(fetchUserLocationProvider).value;
-  final initialLocation = userLocation != null ? '/' : '/get-started';
-
-  // listen for changes in userLocationProvider to refresh the router for redirection
-  ref.listen(fetchUserLocationProvider, (_, _) => router.refresh());
-
   // Refresh router on auth state change
   ref.listen(authStateChangesProvider, (_, _) => router.refresh());
 
@@ -69,16 +59,11 @@ GoRouter appRouter(Ref ref) {
   ref.listen(userModeControllerProvider, (_, _) => router.refresh());
 
   return router = GoRouter(
-    initialLocation: initialLocation,
+    initialLocation: '/',
     debugLogDiagnostics: true,
     redirect: (context, state) => redirection(ref, state),
     extraCodec: const JsonExtraCodec(),
     routes: [
-      GoRoute(
-        path: '/get-started',
-        name: AppRoute.getStarted.name,
-        builder: (context, state) => const StartupScreen(),
-      ),
       GoRoute(
         path: '/terms-of-service',
         name: AppRoute.termsOfService.name,
