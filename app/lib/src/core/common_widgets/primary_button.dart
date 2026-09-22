@@ -1,4 +1,3 @@
-import 'package:app/src/themes/theme_helpers.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_progress_indicator.dart';
@@ -16,22 +15,19 @@ class PrimaryButton extends StatelessWidget {
     required this.text,
     this.isLoading = false,
     this.isDisabled = false,
-    this.useMaxSize = false,
+
     this.onPressed,
   });
 
   final String text;
   final bool isLoading;
   final bool isDisabled;
-  final bool useMaxSize;
+
   final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return FilledButton(
-      style: FilledButton.styleFrom(
-        minimumSize: useMaxSize ? ThemeHelpers.buttonSize() : null,
-      ),
       onPressed: isDisabled || isLoading ? null : onPressed,
       child: isLoading
           ? SizedBox(

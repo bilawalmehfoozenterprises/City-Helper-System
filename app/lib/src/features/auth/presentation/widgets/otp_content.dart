@@ -129,7 +129,6 @@ class _OtpContentState extends ConsumerState<OtpContent> {
           ),
           gapH24,
           PrimaryButton(
-            useMaxSize: true,
             isDisabled: !_isValidCode,
             isLoading: authState.isLoading,
             text: context.loc.confirmCode_verifyButton,

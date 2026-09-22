@@ -7,13 +7,9 @@ const kCanvasColor = Color(0xFFF8F8F6);
 const kDarkGreyColor = Color(0xFF5F625E);
 const kLightGreyColor = Color(0xFFE9E9E5);
 const kBlackColor = Color(0xFF111210);
-const kAmberColor = Color(0xFFF1A33C);
 const kRedColor = Color(0xFFD64535);
 const surfaceColor = Color(0xFFF2F2EF);
 const imageBackgroundColor = Color(0xFFD4D4CE);
 
 const darkGreyColor = Color(0xFF777A74);
 const lightGreyColor = Color(0xFFDADBD5);
-
-// Kept as an alias for existing widgets while the component layer is rebuilt.
-const amberColor = kAmberColor;

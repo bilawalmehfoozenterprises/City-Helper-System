@@ -163,7 +163,6 @@ class _GetLocationContentState extends ConsumerState<GetLocationContent> {
         if (locationValue.value != null) ...[
           PrimaryButton(
             key: kSaveKey,
-            useMaxSize: true,
             isDisabled: isLoading || !_isAgreed,
             isLoading: userLocationValue.isLoading,
             text: context.loc.saveLocation,

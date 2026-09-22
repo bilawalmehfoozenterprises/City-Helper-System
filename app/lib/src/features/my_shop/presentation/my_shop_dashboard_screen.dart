@@ -173,7 +173,6 @@ class _ShopDetailsView extends ConsumerWidget {
 
         /// Delete button with loader
         CustomOutlinedButton(
-          useMaxSize: true,
           text: context.loc.deleteShop,
           isLoading: isDeleting,
           isDisabled: isDeleting, // block other presses

@@ -51,7 +51,7 @@ class OpenIndicator extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: Sizes.p4, horizontal: Sizes.p8),
       decoration: BoxDecoration(
         color: context.colorScheme.onPrimary,
-        borderRadius: ThemeHelpers.borderRadiusAllRounded(),
+        borderRadius: ThemeHelpers.pillBorderRadius(),
       ),
       child: Row(
         spacing: Sizes.p4,
@@ -83,7 +83,7 @@ class CloseIndicator extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: Sizes.p4, horizontal: Sizes.p8),
       decoration: BoxDecoration(
         color: context.colorScheme.onPrimary,
-        borderRadius: ThemeHelpers.borderRadiusAllRounded(),
+        borderRadius: ThemeHelpers.pillBorderRadius(),
       ),
       child: Row(
         spacing: Sizes.p4,
@@ -114,7 +114,7 @@ class AvailableIndicator extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: Sizes.p4, horizontal: Sizes.p8),
       decoration: BoxDecoration(
         color: context.colorScheme.onPrimary,
-        borderRadius: ThemeHelpers.borderRadiusAllRounded(),
+        borderRadius: ThemeHelpers.pillBorderRadius(),
       ),
       child: Row(
         spacing: Sizes.p4,
@@ -148,7 +148,7 @@ class UnavailableIndicator extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: Sizes.p4, horizontal: Sizes.p8),
       decoration: BoxDecoration(
         color: context.colorScheme.onPrimary,
-        borderRadius: ThemeHelpers.borderRadiusAllRounded(),
+        borderRadius: ThemeHelpers.pillBorderRadius(),
       ),
       child: Row(
         spacing: Sizes.p4,

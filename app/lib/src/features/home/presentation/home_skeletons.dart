@@ -142,7 +142,7 @@ class EntityCardSkeletonContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var radius = ThemeHelpers.borderRadius();
+    var radius = ThemeHelpers.surfaceCorner();
     var borderRadius = BorderRadius.only(topLeft: radius, topRight: radius);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

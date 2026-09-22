@@ -4,8 +4,11 @@ import 'package:app/src/features/auth/presentation/account_screen.dart';
 import 'package:app/src/features/auth/presentation/auth_flow_screen.dart';
 import 'package:app/src/features/auth/presentation/delete_account_screen.dart';
 import 'package:app/src/features/auth/presentation/profile_screen.dart';
-import 'package:app/src/features/categories_list/presentation/categories_list_screen.dart';
+import 'package:app/src/features/app_scaffold/primary_navigation_scaffold.dart';
+import 'package:app/src/features/app_scaffold/primary_tab_placeholder_screens.dart';
+
 import 'package:app/src/features/home/presentation/home_screen.dart';
+import 'package:app/src/features/home/presentation/hostel_home_screen.dart';
 import 'package:app/src/features/home/presentation/popular_entities_list_screen.dart';
 import 'package:app/src/features/home_detail/domain/entity_detail.dart';
 import 'package:app/src/features/home_detail/presentation/home_detail_screen.dart';
@@ -31,6 +34,8 @@ enum AppRoute {
   termsOfService,
   privacyPolicy,
   pickYourLocation,
+  hostels,
+  areas,
   category,
   home,
   homeDetail,
@@ -85,118 +90,165 @@ GoRouter appRouter(Ref ref) {
         name: AppRoute.deleteAccount.name,
         builder: (context, state) => const DeleteAccountScreen(),
       ),
-      GoRoute(
-        path: '/',
-        name: AppRoute.category.name,
-        builder: (context, state) => const CategoriesListScreen(),
-        routes: [
-          GoRoute(
-            path: '/home/:categoryId',
-            name: AppRoute.home.name,
-            builder: (context, state) {
-              final id = int.parse(state.pathParameters['categoryId']!);
-              return HomeScreen(categoryId: id);
-            },
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, navigationShell) =>
+            PrimaryNavigationScaffold(navigationShell: navigationShell),
+        branches: [
+          StatefulShellBranch(
             routes: [
               GoRoute(
-                path: 'popular',
-                name: AppRoute.popular.name,
-                builder: (context, state) {
-                  final id = int.parse(state.pathParameters['categoryId']!);
-                  return PopularEntitiesListScreen(categoryId: id);
-                },
+                path: '/',
+                name: AppRoute.category.name,
+                builder: (context, state) => const HostelHomeScreen(),
                 routes: [
                   GoRoute(
-                    path: 'detail/:entityId',
-                    name: AppRoute.popularDetail.name,
-                    pageBuilder: (context, state) {
-                      final categoryId = int.parse(
-                        state.pathParameters['categoryId']!,
-                      );
-                      final entityId = state.pathParameters['entityId']!;
-                      return MaterialPage(
-                        fullscreenDialog: true,
-                        child: HomeDetailScreen(
-                          categoryId: categoryId,
-                          entityId: entityId,
-                        ),
-                      );
+                    path: '/home/:categoryId',
+                    name: AppRoute.home.name,
+                    builder: (context, state) {
+                      final id = int.parse(state.pathParameters['categoryId']!);
+                      return HomeScreen(categoryId: id);
                     },
+                    routes: [
+                      GoRoute(
+                        path: 'popular',
+                        name: AppRoute.popular.name,
+                        builder: (context, state) {
+                          final id = int.parse(
+                            state.pathParameters['categoryId']!,
+                          );
+                          return PopularEntitiesListScreen(categoryId: id);
+                        },
+                        routes: [
+                          GoRoute(
+                            path: 'detail/:entityId',
+                            name: AppRoute.popularDetail.name,
+                            pageBuilder: (context, state) {
+                              final categoryId = int.parse(
+                                state.pathParameters['categoryId']!,
+                              );
+                              final entityId =
+                                  state.pathParameters['entityId']!;
+                              return MaterialPage(
+                                fullscreenDialog: true,
+                                child: HomeDetailScreen(
+                                  categoryId: categoryId,
+                                  entityId: entityId,
+                                ),
+                              );
+                            },
+                          ),
+                        ],
+                      ),
+                      GoRoute(
+                        path: 'detail/:entityId',
+                        name: AppRoute.homeDetail.name,
+                        pageBuilder: (context, state) {
+                          final categoryId = int.parse(
+                            state.pathParameters['categoryId']!,
+                          );
+                          final entityId = state.pathParameters['entityId']!;
+                          return MaterialPage(
+                            fullscreenDialog: true,
+                            child: HomeDetailScreen(
+                              categoryId: categoryId,
+                              entityId: entityId,
+                            ),
+                          );
+                        },
+                        routes: [
+                          GoRoute(
+                            path: 'leave-review',
+                            name: AppRoute.leaveReview.name,
+                            pageBuilder: (context, state) {
+                              final entityId =
+                                  state.pathParameters['entityId']!;
+                              final categoryId = int.parse(
+                                state.pathParameters['categoryId']!,
+                              );
+                              return MaterialPage(
+                                fullscreenDialog: true,
+                                child: LeaveReviewScreen(
+                                  entityId: entityId,
+                                  categoryId: categoryId,
+                                ),
+                              );
+                            },
+                          ),
+                          GoRoute(
+                            path: 'reviews', // Path for ReviewListScreen
+                            name: AppRoute.reviewList.name,
+                            pageBuilder: (context, state) {
+                              final entityId =
+                                  state.pathParameters['entityId']!;
+                              final categoryId = int.parse(
+                                state.pathParameters['categoryId']!,
+                              );
+                              return MaterialPage(
+                                fullscreenDialog: true,
+                                child: ReviewListScreen(
+                                  entityId: entityId,
+                                  categoryId: categoryId,
+                                ),
+                              );
+                            },
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              GoRoute(
-                path: 'detail/:entityId',
-                name: AppRoute.homeDetail.name,
-                pageBuilder: (context, state) {
-                  final categoryId = int.parse(
-                    state.pathParameters['categoryId']!,
-                  );
-                  final entityId = state.pathParameters['entityId']!;
-                  return MaterialPage(
-                    fullscreenDialog: true,
-                    child: HomeDetailScreen(
-                      categoryId: categoryId,
-                      entityId: entityId,
+                  GoRoute(
+                    path: 'auth',
+                    name: AppRoute.auth.name,
+                    pageBuilder: (context, state) => MaterialPage(
+                      fullscreenDialog: true,
+                      child: AuthFlowScreen(),
                     ),
-                  );
-                },
-                routes: [
-                  GoRoute(
-                    path: 'leave-review',
-                    name: AppRoute.leaveReview.name,
-                    pageBuilder: (context, state) {
-                      final entityId = state.pathParameters['entityId']!;
-                      final categoryId = int.parse(
-                        state.pathParameters['categoryId']!,
-                      );
-                      return MaterialPage(
-                        fullscreenDialog: true,
-                        child: LeaveReviewScreen(
-                          entityId: entityId,
-                          categoryId: categoryId,
-                        ),
-                      );
-                    },
                   ),
                   GoRoute(
-                    path: 'reviews', // Path for ReviewListScreen
-                    name: AppRoute.reviewList.name,
-                    pageBuilder: (context, state) {
-                      final entityId = state.pathParameters['entityId']!;
-                      final categoryId = int.parse(
-                        state.pathParameters['categoryId']!,
-                      );
-                      return MaterialPage(
-                        fullscreenDialog: true,
-                        child: ReviewListScreen(
-                          entityId: entityId,
-                          categoryId: categoryId,
-                        ),
-                      );
-                    },
+                    path: 'account',
+                    name: AppRoute.account.name,
+                    pageBuilder: (context, state) => MaterialPage(
+                      fullscreenDialog: true,
+                      child: AccountScreen(),
+                    ),
+                  ),
+                  GoRoute(
+                    path: 'profile',
+                    name: AppRoute.profile.name,
+                    pageBuilder: (context, state) => MaterialPage(
+                      fullscreenDialog: true,
+                      child: ProfileScreen(),
+                    ),
                   ),
                 ],
               ),
             ],
           ),
-          GoRoute(
-            path: 'auth',
-            name: AppRoute.auth.name,
-            pageBuilder: (context, state) =>
-                MaterialPage(fullscreenDialog: true, child: AuthFlowScreen()),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/hostels',
+                name: AppRoute.hostels.name,
+                builder: (context, state) => const HostelsScreen(),
+              ),
+            ],
           ),
-          GoRoute(
-            path: 'account',
-            name: AppRoute.account.name,
-            pageBuilder: (context, state) =>
-                MaterialPage(fullscreenDialog: true, child: AccountScreen()),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/areas',
+                name: AppRoute.areas.name,
+                builder: (context, state) => const AreasScreen(),
+              ),
+            ],
           ),
-          GoRoute(
-            path: 'profile',
-            name: AppRoute.profile.name,
-            pageBuilder: (context, state) =>
-                MaterialPage(fullscreenDialog: true, child: ProfileScreen()),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/you',
+                builder: (context, state) => const YouScreen(),
+              ),
+            ],
           ),
         ],
       ),

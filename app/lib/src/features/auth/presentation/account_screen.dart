@@ -155,7 +155,6 @@ class AccountScreen extends ConsumerWidget {
                   gapH24,
                   PrimaryButton(
                     isLoading: false,
-                    useMaxSize: true,
                     text: context.loc.account_editProfile,
                     onPressed: authState.isLoading
                         ? null
@@ -166,7 +165,6 @@ class AccountScreen extends ConsumerWidget {
                     isLoading:
                         authState.isLoading &&
                         accountAction == AccountAction.logout,
-                    useMaxSize: true,
                     text: context.loc.logout,
                     onPressed: authState.isLoading
                         ? null
@@ -177,15 +175,10 @@ class AccountScreen extends ConsumerWidget {
                     isLoading:
                         authState.isLoading &&
                         accountAction == AccountAction.delete,
-                    useMaxSize: true,
                     text: context.loc.deleteAccount,
                     onPressed: authState.isLoading
                         ? null
                         : () => _deleteAccount(context, ref),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: context.colorScheme.error,
-                      side: BorderSide(color: context.colorScheme.error),
-                    ),
                   ),
                 ],
               ),

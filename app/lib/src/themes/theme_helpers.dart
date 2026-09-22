@@ -4,12 +4,17 @@ import 'package:app/src/core/constants/app_sizes.dart';
 class ThemeHelpers {
   ThemeHelpers._();
 
-  static Size? buttonSize() => Size(double.infinity, Sizes.p40);
+  static const surfaceRadius = Sizes.p12;
+  static const pillRadius = 999.0;
 
-  static Radius borderRadius() => Radius.circular(Sizes.p12);
+  static Radius surfaceCorner() => Radius.circular(surfaceRadius);
 
-  static BorderRadius borderRadiusAll() => BorderRadius.all(borderRadius());
+  static BorderRadius surfaceBorderRadius() =>
+      BorderRadius.all(surfaceCorner());
 
-  static BorderRadius borderRadiusAllRounded() =>
-      BorderRadius.all(Radius.circular(25));
+  static BorderRadius sheetBorderRadius() =>
+      BorderRadius.vertical(top: surfaceCorner());
+
+  static BorderRadius pillBorderRadius() =>
+      BorderRadius.all(Radius.circular(pillRadius));
 }

@@ -45,8 +45,10 @@ class ReviewListTileSkeleton extends StatelessWidget {
                   rating: 0,
                   itemCount: 5,
                   itemSize: 18.0,
-                  itemBuilder: (context, _) =>
-                      const Icon(Icons.star, color: Colors.amber),
+                  itemBuilder: (context, _) => Icon(
+                    Icons.star,
+                    color: context.colorScheme.onSurfaceVariant,
+                  ),
                 ),
               ],
             ),

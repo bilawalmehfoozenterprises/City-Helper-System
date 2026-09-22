@@ -59,7 +59,6 @@ class StartupContent extends StatelessWidget {
         if (!isLargeScreen)
           PrimaryButton(
             key: kGetStartedKey,
-            useMaxSize: true,
             text: context.loc.getStarted,
             onPressed: onGetStarted,
           ),

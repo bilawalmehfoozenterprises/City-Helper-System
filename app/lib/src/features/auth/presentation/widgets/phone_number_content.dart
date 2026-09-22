@@ -56,11 +56,13 @@ class PhoneNumberContent extends ConsumerWidget {
                 width: 85,
                 child: DropdownButtonFormField<String>(
                   initialValue: countryCode,
+                  isExpanded: true,
                   items: [countryCode].map((code) {
                     return DropdownMenuItem(value: code, child: Text('+$code'));
                   }).toList(),
                   onChanged: null,
                   decoration: const InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(horizontal: Sizes.p8),
                     border: OutlineInputBorder(),
                   ),
                 ),
@@ -80,7 +82,6 @@ class PhoneNumberContent extends ConsumerWidget {
           ),
           gapH24,
           PrimaryButton(
-            useMaxSize: true,
             text: context.loc.continueText,
             isDisabled: !isValid,
             isLoading: authState.isLoading,

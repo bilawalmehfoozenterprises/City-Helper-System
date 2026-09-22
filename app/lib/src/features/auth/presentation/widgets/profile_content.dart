@@ -185,8 +185,8 @@ class _ProfileContentState extends ConsumerState<ProfileContent> {
                   valueListenable: _nameController,
                   builder: (context, value, child) {
                     return PrimaryButton(
-                      useMaxSize: true,
-                      isDisabled: value.text.trim().length < 4 || authState.isLoading,
+                      isDisabled:
+                          value.text.trim().length < 4 || authState.isLoading,
                       isLoading: authState.isLoading,
                       onPressed: () => _submit(profile),
                       text: isEditMode
