@@ -1,6 +1,5 @@
 import 'package:app/src/core/utils/font_family_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import 'color.dart';

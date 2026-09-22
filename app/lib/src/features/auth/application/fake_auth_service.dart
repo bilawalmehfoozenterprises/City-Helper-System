@@ -9,7 +9,6 @@ import 'package:app/src/features/auth/data/user_repository.dart';
 import 'package:app/src/features/auth/domain/app_user.dart';
 import 'package:app/src/features/auth/domain/auth_exceptions.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class FakeAuthService extends AuthService {
   FakeAuthService({
@@ -17,7 +16,7 @@ class FakeAuthService extends AuthService {
     required this.userRepository,
     required this.imageUploadRepository,
     required this.defaultLocation,
-  }) : super(FakeRef());
+  }) : super(null);
 
   final AuthRepository authRepository;
   final UserRepository userRepository;
@@ -95,9 +94,4 @@ class FakeAuthService extends AuthService {
       removeProfileImage: removeProfileImage,
     );
   }
-}
-
-class FakeRef implements Ref {
-  @override
-  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

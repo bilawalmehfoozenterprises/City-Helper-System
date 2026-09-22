@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'entities_pagination_state.dart';
@@ -9,6 +9,7 @@ part of 'entities_pagination_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 /// @nodoc
@@ -25,16 +26,21 @@ $EntitiesPaginatedStateCopyWith<EntitiesPaginatedState> get copyWith => _$Entiti
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is EntitiesPaginatedState&&const DeepCollectionEquality().equals(other.entities, entities)&&(identical(other.hasMore, hasMore) || other.hasMore == hasMore)&&const DeepCollectionEquality().equals(other.paginationError, paginationError)&&(identical(other.isInitialLoading, isInitialLoading) || other.isInitialLoading == isInitialLoading)&&(identical(other.isLoadingNextPage, isLoadingNextPage) || other.isLoadingNextPage == isLoadingNextPage));
+  final _this = this as EntitiesPaginatedState;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is EntitiesPaginatedState&&const DeepCollectionEquality().equals(other.entities, _this.entities)&&(identical(other.hasMore, _this.hasMore) || other.hasMore == _this.hasMore)&&const DeepCollectionEquality().equals(other.paginationError, _this.paginationError)&&(identical(other.isInitialLoading, _this.isInitialLoading) || other.isInitialLoading == _this.isInitialLoading)&&(identical(other.isLoadingNextPage, _this.isLoadingNextPage) || other.isLoadingNextPage == _this.isLoadingNextPage));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(entities),hasMore,const DeepCollectionEquality().hash(paginationError),isInitialLoading,isLoadingNextPage);
+int get hashCode {
+  final _this = this as EntitiesPaginatedState;
+  return Object.hash(runtimeType,const DeepCollectionEquality().hash(_this.entities),_this.hasMore,const DeepCollectionEquality().hash(_this.paginationError),_this.isInitialLoading,_this.isLoadingNextPage);
+}
 
 @override
 String toString() {
-  return 'EntitiesPaginatedState(entities: $entities, hasMore: $hasMore, paginationError: $paginationError, isInitialLoading: $isInitialLoading, isLoadingNextPage: $isLoadingNextPage)';
+  final _this = this as EntitiesPaginatedState;
+  return 'EntitiesPaginatedState(entities: ${_this.entities}, hasMore: ${_this.hasMore}, paginationError: ${_this.paginationError}, isInitialLoading: ${_this.isInitialLoading}, isLoadingNextPage: ${_this.isLoadingNextPage})';
 }
 
 
@@ -63,7 +69,7 @@ class _$EntitiesPaginatedStateCopyWithImpl<$Res>
 /// Create a copy of EntitiesPaginatedState
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') @override $Res call({Object? entities = null,Object? hasMore = null,Object? paginationError = freezed,Object? isInitialLoading = null,Object? isLoadingNextPage = null,}) {
-  return _then(_self.copyWith(
+  return _then(EntitiesPaginatedState(
 entities: null == entities ? _self.entities : entities // ignore: cast_nullable_to_non_nullable
 as List<Entity>,hasMore: null == hasMore ? _self.hasMore : hasMore // ignore: cast_nullable_to_non_nullable
 as bool,paginationError: freezed == paginationError ? _self.paginationError : paginationError ,isInitialLoading: null == isInitialLoading ? _self.isInitialLoading : isInitialLoading // ignore: cast_nullable_to_non_nullable
@@ -209,7 +215,7 @@ return $default(_that.entities,_that.hasMore,_that.paginationError,_that.isIniti
 
 
 class _EntitiesPaginatedState implements EntitiesPaginatedState {
-  const _EntitiesPaginatedState({final  List<Entity> entities = const [], this.hasMore = true, this.paginationError, this.isInitialLoading = false, this.isLoadingNextPage = false}): _entities = entities;
+  const _EntitiesPaginatedState({ List<Entity> entities = const [], this.hasMore = true, this.paginationError, this.isInitialLoading = false, this.isLoadingNextPage = false}): _entities = entities;
   
 
  final  List<Entity> _entities;
@@ -234,16 +240,18 @@ _$EntitiesPaginatedStateCopyWith<_EntitiesPaginatedState> get copyWith => __$Ent
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _EntitiesPaginatedState&&const DeepCollectionEquality().equals(other._entities, _entities)&&(identical(other.hasMore, hasMore) || other.hasMore == hasMore)&&const DeepCollectionEquality().equals(other.paginationError, paginationError)&&(identical(other.isInitialLoading, isInitialLoading) || other.isInitialLoading == isInitialLoading)&&(identical(other.isLoadingNextPage, isLoadingNextPage) || other.isLoadingNextPage == isLoadingNextPage));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _EntitiesPaginatedState&&const DeepCollectionEquality().equals(other.entities, _entities)&&(identical(other.hasMore, hasMore) || other.hasMore == hasMore)&&const DeepCollectionEquality().equals(other.paginationError, paginationError)&&(identical(other.isInitialLoading, isInitialLoading) || other.isInitialLoading == isInitialLoading)&&(identical(other.isLoadingNextPage, isLoadingNextPage) || other.isLoadingNextPage == isLoadingNextPage));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,const DeepCollectionEquality().hash(_entities),hasMore,const DeepCollectionEquality().hash(paginationError),isInitialLoading,isLoadingNextPage);
+int get hashCode {
+    return Object.hash(runtimeType,const DeepCollectionEquality().hash(_entities),hasMore,const DeepCollectionEquality().hash(paginationError),isInitialLoading,isLoadingNextPage);
+}
 
 @override
 String toString() {
-  return 'EntitiesPaginatedState(entities: $entities, hasMore: $hasMore, paginationError: $paginationError, isInitialLoading: $isInitialLoading, isLoadingNextPage: $isLoadingNextPage)';
+    return 'EntitiesPaginatedState(entities: $entities, hasMore: $hasMore, paginationError: $paginationError, isInitialLoading: $isInitialLoading, isLoadingNextPage: $isLoadingNextPage)';
 }
 
 

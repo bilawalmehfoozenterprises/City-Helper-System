@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'entity_detail.dart';
@@ -9,6 +9,7 @@ part of 'entity_detail.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 EntityDetail _$EntityDetailFromJson(
@@ -38,14 +39,7 @@ EntityDetail _$EntityDetailFromJson(
 /// @nodoc
 mixin _$EntityDetail {
 
-// Core Identifiers & Basic Info
- EntityId get id; CategoryId get categoryId; SubCategoryId get subCategoryId; String get name; String get coverImageUrl;// Location
- String get cityName; String get sectorName;@_latLngJsonConverter LatLng get latLng; String get streetAddress;// Ratings & Popularity
- double get avgRating; int get totalReviews; bool get isPopular; List<RatingBreakdown> get ratingBreakdown;// Operational Status & Timestamps
- OperationalStatus get operationalStatus; ApprovalStatus get approvalStatus;@_timestampJsonConverter DateTime get createdAt;@_timestampJsonConverter DateTime get updatedAt;@_openingHoursConverter Map<DayOfWeek, OpeningHours>? get openingHours;// Contact Information
- UserId get ownerId; String? get phoneNumber; String? get waNumber; String? get email; String? get websiteUrl; String? get instagramUrl; String? get facebookUrl;// Descriptions & Media
- String get description; List<String> get galleryImageUrls;// Specific Attributes
- GenderPreference? get genderPreference;
+ EntityId get id; CategoryId get categoryId; SubCategoryId get subCategoryId; String get name; String get coverImageUrl; String get cityName; String get sectorName;@_latLngJsonConverter LatLng get latLng; String get streetAddress; double get avgRating; int get totalReviews; bool get isPopular; List<RatingBreakdown> get ratingBreakdown; OperationalStatus get operationalStatus; ApprovalStatus get approvalStatus;@_timestampJsonConverter DateTime get createdAt;@_timestampJsonConverter DateTime get updatedAt;@_openingHoursConverter Map<DayOfWeek, OpeningHours>? get openingHours; UserId get ownerId; String? get phoneNumber; String? get waNumber; String? get email; String? get websiteUrl; String? get instagramUrl; String? get facebookUrl; String get description; List<String> get galleryImageUrls; GenderPreference? get genderPreference;
 /// Create a copy of EntityDetail
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -58,16 +52,21 @@ $EntityDetailCopyWith<EntityDetail> get copyWith => _$EntityDetailCopyWithImpl<E
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is EntityDetail&&(identical(other.id, id) || other.id == id)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.subCategoryId, subCategoryId) || other.subCategoryId == subCategoryId)&&(identical(other.name, name) || other.name == name)&&(identical(other.coverImageUrl, coverImageUrl) || other.coverImageUrl == coverImageUrl)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.avgRating, avgRating) || other.avgRating == avgRating)&&(identical(other.totalReviews, totalReviews) || other.totalReviews == totalReviews)&&(identical(other.isPopular, isPopular) || other.isPopular == isPopular)&&const DeepCollectionEquality().equals(other.ratingBreakdown, ratingBreakdown)&&(identical(other.operationalStatus, operationalStatus) || other.operationalStatus == operationalStatus)&&(identical(other.approvalStatus, approvalStatus) || other.approvalStatus == approvalStatus)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&const DeepCollectionEquality().equals(other.openingHours, openingHours)&&(identical(other.ownerId, ownerId) || other.ownerId == ownerId)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other.galleryImageUrls, galleryImageUrls)&&(identical(other.genderPreference, genderPreference) || other.genderPreference == genderPreference));
+  final _this = this as EntityDetail;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is EntityDetail&&(identical(other.id, _this.id) || other.id == _this.id)&&(identical(other.categoryId, _this.categoryId) || other.categoryId == _this.categoryId)&&(identical(other.subCategoryId, _this.subCategoryId) || other.subCategoryId == _this.subCategoryId)&&(identical(other.name, _this.name) || other.name == _this.name)&&(identical(other.coverImageUrl, _this.coverImageUrl) || other.coverImageUrl == _this.coverImageUrl)&&(identical(other.cityName, _this.cityName) || other.cityName == _this.cityName)&&(identical(other.sectorName, _this.sectorName) || other.sectorName == _this.sectorName)&&(identical(other.latLng, _this.latLng) || other.latLng == _this.latLng)&&(identical(other.streetAddress, _this.streetAddress) || other.streetAddress == _this.streetAddress)&&(identical(other.avgRating, _this.avgRating) || other.avgRating == _this.avgRating)&&(identical(other.totalReviews, _this.totalReviews) || other.totalReviews == _this.totalReviews)&&(identical(other.isPopular, _this.isPopular) || other.isPopular == _this.isPopular)&&const DeepCollectionEquality().equals(other.ratingBreakdown, _this.ratingBreakdown)&&(identical(other.operationalStatus, _this.operationalStatus) || other.operationalStatus == _this.operationalStatus)&&(identical(other.approvalStatus, _this.approvalStatus) || other.approvalStatus == _this.approvalStatus)&&(identical(other.createdAt, _this.createdAt) || other.createdAt == _this.createdAt)&&(identical(other.updatedAt, _this.updatedAt) || other.updatedAt == _this.updatedAt)&&const DeepCollectionEquality().equals(other.openingHours, _this.openingHours)&&(identical(other.ownerId, _this.ownerId) || other.ownerId == _this.ownerId)&&(identical(other.phoneNumber, _this.phoneNumber) || other.phoneNumber == _this.phoneNumber)&&(identical(other.waNumber, _this.waNumber) || other.waNumber == _this.waNumber)&&(identical(other.email, _this.email) || other.email == _this.email)&&(identical(other.websiteUrl, _this.websiteUrl) || other.websiteUrl == _this.websiteUrl)&&(identical(other.instagramUrl, _this.instagramUrl) || other.instagramUrl == _this.instagramUrl)&&(identical(other.facebookUrl, _this.facebookUrl) || other.facebookUrl == _this.facebookUrl)&&(identical(other.description, _this.description) || other.description == _this.description)&&const DeepCollectionEquality().equals(other.galleryImageUrls, _this.galleryImageUrls)&&(identical(other.genderPreference, _this.genderPreference) || other.genderPreference == _this.genderPreference));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hashAll([runtimeType,id,categoryId,subCategoryId,name,coverImageUrl,cityName,sectorName,latLng,streetAddress,avgRating,totalReviews,isPopular,const DeepCollectionEquality().hash(ratingBreakdown),operationalStatus,approvalStatus,createdAt,updatedAt,const DeepCollectionEquality().hash(openingHours),ownerId,phoneNumber,waNumber,email,websiteUrl,instagramUrl,facebookUrl,description,const DeepCollectionEquality().hash(galleryImageUrls),genderPreference]);
+int get hashCode {
+  final _this = this as EntityDetail;
+  return Object.hashAll([runtimeType,_this.id,_this.categoryId,_this.subCategoryId,_this.name,_this.coverImageUrl,_this.cityName,_this.sectorName,_this.latLng,_this.streetAddress,_this.avgRating,_this.totalReviews,_this.isPopular,const DeepCollectionEquality().hash(_this.ratingBreakdown),_this.operationalStatus,_this.approvalStatus,_this.createdAt,_this.updatedAt,const DeepCollectionEquality().hash(_this.openingHours),_this.ownerId,_this.phoneNumber,_this.waNumber,_this.email,_this.websiteUrl,_this.instagramUrl,_this.facebookUrl,_this.description,const DeepCollectionEquality().hash(_this.galleryImageUrls),_this.genderPreference]);
+}
 
 @override
 String toString() {
-  return 'EntityDetail(id: $id, categoryId: $categoryId, subCategoryId: $subCategoryId, name: $name, coverImageUrl: $coverImageUrl, cityName: $cityName, sectorName: $sectorName, latLng: $latLng, streetAddress: $streetAddress, avgRating: $avgRating, totalReviews: $totalReviews, isPopular: $isPopular, ratingBreakdown: $ratingBreakdown, operationalStatus: $operationalStatus, approvalStatus: $approvalStatus, createdAt: $createdAt, updatedAt: $updatedAt, openingHours: $openingHours, ownerId: $ownerId, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, websiteUrl: $websiteUrl, instagramUrl: $instagramUrl, facebookUrl: $facebookUrl, description: $description, galleryImageUrls: $galleryImageUrls, genderPreference: $genderPreference)';
+  final _this = this as EntityDetail;
+  return 'EntityDetail(id: ${_this.id}, categoryId: ${_this.categoryId}, subCategoryId: ${_this.subCategoryId}, name: ${_this.name}, coverImageUrl: ${_this.coverImageUrl}, cityName: ${_this.cityName}, sectorName: ${_this.sectorName}, latLng: ${_this.latLng}, streetAddress: ${_this.streetAddress}, avgRating: ${_this.avgRating}, totalReviews: ${_this.totalReviews}, isPopular: ${_this.isPopular}, ratingBreakdown: ${_this.ratingBreakdown}, operationalStatus: ${_this.operationalStatus}, approvalStatus: ${_this.approvalStatus}, createdAt: ${_this.createdAt}, updatedAt: ${_this.updatedAt}, openingHours: ${_this.openingHours}, ownerId: ${_this.ownerId}, phoneNumber: ${_this.phoneNumber}, waNumber: ${_this.waNumber}, email: ${_this.email}, websiteUrl: ${_this.websiteUrl}, instagramUrl: ${_this.instagramUrl}, facebookUrl: ${_this.facebookUrl}, description: ${_this.description}, galleryImageUrls: ${_this.galleryImageUrls}, genderPreference: ${_this.genderPreference})';
 }
 
 
@@ -78,7 +77,7 @@ abstract mixin class $EntityDetailCopyWith<$Res>  {
   factory $EntityDetailCopyWith(EntityDetail value, $Res Function(EntityDetail) _then) = _$EntityDetailCopyWithImpl;
 @useResult
 $Res call({
- String id, int categoryId, int subCategoryId, String name, String coverImageUrl, String cityName, String sectorName,@_latLngJsonConverter LatLng latLng, String streetAddress, double avgRating, int totalReviews, bool isPopular, List<RatingBreakdown> ratingBreakdown, OperationalStatus operationalStatus, ApprovalStatus approvalStatus,@_timestampJsonConverter DateTime createdAt,@_timestampJsonConverter DateTime updatedAt,@_openingHoursConverter Map<DayOfWeek, OpeningHours> openingHours, String ownerId, String? phoneNumber, String? waNumber, String? email, String? websiteUrl, String? instagramUrl, String? facebookUrl, String description, List<String> galleryImageUrls, GenderPreference? genderPreference
+ EntityId id, CategoryId categoryId, SubCategoryId subCategoryId, String name, String coverImageUrl, String cityName, String sectorName,@_latLngJsonConverter LatLng latLng, String streetAddress, double avgRating, int totalReviews, bool isPopular, List<RatingBreakdown> ratingBreakdown, OperationalStatus operationalStatus, ApprovalStatus approvalStatus,@_timestampJsonConverter DateTime createdAt,@_timestampJsonConverter DateTime updatedAt,@_openingHoursConverter Map<DayOfWeek, OpeningHours> openingHours, UserId ownerId, String? phoneNumber, String? waNumber, String? email, String? websiteUrl, String? instagramUrl, String? facebookUrl, String description, List<String> galleryImageUrls, GenderPreference? genderPreference
 });
 
 
@@ -98,9 +97,9 @@ class _$EntityDetailCopyWithImpl<$Res>
 @pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? categoryId = null,Object? subCategoryId = null,Object? name = null,Object? coverImageUrl = null,Object? cityName = null,Object? sectorName = null,Object? latLng = null,Object? streetAddress = null,Object? avgRating = null,Object? totalReviews = null,Object? isPopular = null,Object? ratingBreakdown = null,Object? operationalStatus = null,Object? approvalStatus = null,Object? createdAt = null,Object? updatedAt = null,Object? openingHours = null,Object? ownerId = null,Object? phoneNumber = freezed,Object? waNumber = freezed,Object? email = freezed,Object? websiteUrl = freezed,Object? instagramUrl = freezed,Object? facebookUrl = freezed,Object? description = null,Object? galleryImageUrls = null,Object? genderPreference = freezed,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as String,categoryId: null == categoryId ? _self.categoryId : categoryId // ignore: cast_nullable_to_non_nullable
-as int,subCategoryId: null == subCategoryId ? _self.subCategoryId : subCategoryId // ignore: cast_nullable_to_non_nullable
-as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as EntityId,categoryId: null == categoryId ? _self.categoryId : categoryId // ignore: cast_nullable_to_non_nullable
+as CategoryId,subCategoryId: null == subCategoryId ? _self.subCategoryId : subCategoryId // ignore: cast_nullable_to_non_nullable
+as SubCategoryId,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
 as String,coverImageUrl: null == coverImageUrl ? _self.coverImageUrl : coverImageUrl // ignore: cast_nullable_to_non_nullable
 as String,cityName: null == cityName ? _self.cityName : cityName // ignore: cast_nullable_to_non_nullable
 as String,sectorName: null == sectorName ? _self.sectorName : sectorName // ignore: cast_nullable_to_non_nullable
@@ -116,7 +115,7 @@ as ApprovalStatus,createdAt: null == createdAt ? _self.createdAt : createdAt // 
 as DateTime,updatedAt: null == updatedAt ? _self.updatedAt : updatedAt // ignore: cast_nullable_to_non_nullable
 as DateTime,openingHours: null == openingHours ? _self.openingHours! : openingHours // ignore: cast_nullable_to_non_nullable
 as Map<DayOfWeek, OpeningHours>,ownerId: null == ownerId ? _self.ownerId : ownerId // ignore: cast_nullable_to_non_nullable
-as String,phoneNumber: freezed == phoneNumber ? _self.phoneNumber : phoneNumber // ignore: cast_nullable_to_non_nullable
+as UserId,phoneNumber: freezed == phoneNumber ? _self.phoneNumber : phoneNumber // ignore: cast_nullable_to_non_nullable
 as String?,waNumber: freezed == waNumber ? _self.waNumber : waNumber // ignore: cast_nullable_to_non_nullable
 as String?,email: freezed == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
 as String?,websiteUrl: freezed == websiteUrl ? _self.websiteUrl : websiteUrl // ignore: cast_nullable_to_non_nullable
@@ -266,21 +265,18 @@ return food(_that.id,_that.categoryId,_that.subCategoryId,_that.name,_that.cover
 
 @JsonSerializable(explicitToJson: true)
 class ResidenceDetail extends EntityDetail {
-  const ResidenceDetail({required this.id, required this.categoryId, required this.subCategoryId, required this.name, required this.coverImageUrl, required this.cityName, required this.sectorName, @_latLngJsonConverter required this.latLng, required this.streetAddress, this.avgRating = 0.0, this.totalReviews = 0, this.isPopular = false, final  List<RatingBreakdown> ratingBreakdown = const [], this.operationalStatus = OperationalStatus.defaultStatus, this.approvalStatus = ApprovalStatus.pending, @_timestampJsonConverter required this.createdAt, @_timestampJsonConverter required this.updatedAt, @_openingHoursConverter final  Map<DayOfWeek, OpeningHours>? openingHours, required this.ownerId, this.phoneNumber, this.waNumber, this.email, this.websiteUrl, this.instagramUrl, this.facebookUrl, required this.description, required final  List<String> galleryImageUrls, required this.pricing, this.isFurnished = false, this.genderPreference, this.listingType = ListingType.forRent, this.isRoomAvailable = true, final  String? $type}): _ratingBreakdown = ratingBreakdown,_openingHours = openingHours,_galleryImageUrls = galleryImageUrls,$type = $type ?? 'residence',super._();
+  const ResidenceDetail({required this.id, required this.categoryId, required this.subCategoryId, required this.name, required this.coverImageUrl, required this.cityName, required this.sectorName, @_latLngJsonConverter required this.latLng, required this.streetAddress, this.avgRating = 0.0, this.totalReviews = 0, this.isPopular = false,  List<RatingBreakdown> ratingBreakdown = const [], this.operationalStatus = OperationalStatus.defaultStatus, this.approvalStatus = ApprovalStatus.pending, @_timestampJsonConverter required this.createdAt, @_timestampJsonConverter required this.updatedAt, @_openingHoursConverter  Map<DayOfWeek, OpeningHours>? openingHours, required this.ownerId, this.phoneNumber, this.waNumber, this.email, this.websiteUrl, this.instagramUrl, this.facebookUrl, required this.description, required  List<String> galleryImageUrls, required this.pricing, this.isFurnished = false, this.genderPreference, this.listingType = ListingType.forRent, this.isRoomAvailable = true,  String? $type}): _ratingBreakdown = ratingBreakdown,_openingHours = openingHours,_galleryImageUrls = galleryImageUrls,$type = $type ?? 'residence',super._();
   factory ResidenceDetail.fromJson(Map<String, dynamic> json) => _$ResidenceDetailFromJson(json);
 
-// Core Identifiers & Basic Info
 @override final  EntityId id;
 @override final  CategoryId categoryId;
 @override final  SubCategoryId subCategoryId;
 @override final  String name;
 @override final  String coverImageUrl;
-// Location
 @override final  String cityName;
 @override final  String sectorName;
 @override@_latLngJsonConverter final  LatLng latLng;
 @override final  String streetAddress;
-// Ratings & Popularity
 @override@JsonKey() final  double avgRating;
 @override@JsonKey() final  int totalReviews;
 @override@JsonKey() final  bool isPopular;
@@ -291,7 +287,6 @@ class ResidenceDetail extends EntityDetail {
   return EqualUnmodifiableListView(_ratingBreakdown);
 }
 
-// Operational Status & Timestamps
 @override@JsonKey() final  OperationalStatus operationalStatus;
 @override@JsonKey() final  ApprovalStatus approvalStatus;
 @override@_timestampJsonConverter final  DateTime createdAt;
@@ -305,7 +300,6 @@ class ResidenceDetail extends EntityDetail {
   return EqualUnmodifiableMapView(value);
 }
 
-// Contact Information
 @override final  UserId ownerId;
 @override final  String? phoneNumber;
 @override final  String? waNumber;
@@ -313,7 +307,6 @@ class ResidenceDetail extends EntityDetail {
 @override final  String? websiteUrl;
 @override final  String? instagramUrl;
 @override final  String? facebookUrl;
-// Descriptions & Media
 @override final  String description;
  final  List<String> _galleryImageUrls;
 @override List<String> get galleryImageUrls {
@@ -322,7 +315,6 @@ class ResidenceDetail extends EntityDetail {
   return EqualUnmodifiableListView(_galleryImageUrls);
 }
 
-// Specific Attributes
  final  Pricing pricing;
 @JsonKey() final  bool isFurnished;
 @override final  GenderPreference? genderPreference;
@@ -346,16 +338,18 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ResidenceDetail&&(identical(other.id, id) || other.id == id)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.subCategoryId, subCategoryId) || other.subCategoryId == subCategoryId)&&(identical(other.name, name) || other.name == name)&&(identical(other.coverImageUrl, coverImageUrl) || other.coverImageUrl == coverImageUrl)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.avgRating, avgRating) || other.avgRating == avgRating)&&(identical(other.totalReviews, totalReviews) || other.totalReviews == totalReviews)&&(identical(other.isPopular, isPopular) || other.isPopular == isPopular)&&const DeepCollectionEquality().equals(other._ratingBreakdown, _ratingBreakdown)&&(identical(other.operationalStatus, operationalStatus) || other.operationalStatus == operationalStatus)&&(identical(other.approvalStatus, approvalStatus) || other.approvalStatus == approvalStatus)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&const DeepCollectionEquality().equals(other._openingHours, _openingHours)&&(identical(other.ownerId, ownerId) || other.ownerId == ownerId)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._galleryImageUrls, _galleryImageUrls)&&(identical(other.pricing, pricing) || other.pricing == pricing)&&(identical(other.isFurnished, isFurnished) || other.isFurnished == isFurnished)&&(identical(other.genderPreference, genderPreference) || other.genderPreference == genderPreference)&&(identical(other.listingType, listingType) || other.listingType == listingType)&&(identical(other.isRoomAvailable, isRoomAvailable) || other.isRoomAvailable == isRoomAvailable));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is ResidenceDetail&&(identical(other.id, id) || other.id == id)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.subCategoryId, subCategoryId) || other.subCategoryId == subCategoryId)&&(identical(other.name, name) || other.name == name)&&(identical(other.coverImageUrl, coverImageUrl) || other.coverImageUrl == coverImageUrl)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.avgRating, avgRating) || other.avgRating == avgRating)&&(identical(other.totalReviews, totalReviews) || other.totalReviews == totalReviews)&&(identical(other.isPopular, isPopular) || other.isPopular == isPopular)&&const DeepCollectionEquality().equals(other.ratingBreakdown, _ratingBreakdown)&&(identical(other.operationalStatus, operationalStatus) || other.operationalStatus == operationalStatus)&&(identical(other.approvalStatus, approvalStatus) || other.approvalStatus == approvalStatus)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&const DeepCollectionEquality().equals(other.openingHours, _openingHours)&&(identical(other.ownerId, ownerId) || other.ownerId == ownerId)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other.galleryImageUrls, _galleryImageUrls)&&(identical(other.pricing, pricing) || other.pricing == pricing)&&(identical(other.isFurnished, isFurnished) || other.isFurnished == isFurnished)&&(identical(other.genderPreference, genderPreference) || other.genderPreference == genderPreference)&&(identical(other.listingType, listingType) || other.listingType == listingType)&&(identical(other.isRoomAvailable, isRoomAvailable) || other.isRoomAvailable == isRoomAvailable));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hashAll([runtimeType,id,categoryId,subCategoryId,name,coverImageUrl,cityName,sectorName,latLng,streetAddress,avgRating,totalReviews,isPopular,const DeepCollectionEquality().hash(_ratingBreakdown),operationalStatus,approvalStatus,createdAt,updatedAt,const DeepCollectionEquality().hash(_openingHours),ownerId,phoneNumber,waNumber,email,websiteUrl,instagramUrl,facebookUrl,description,const DeepCollectionEquality().hash(_galleryImageUrls),pricing,isFurnished,genderPreference,listingType,isRoomAvailable]);
+int get hashCode {
+    return Object.hashAll([runtimeType,id,categoryId,subCategoryId,name,coverImageUrl,cityName,sectorName,latLng,streetAddress,avgRating,totalReviews,isPopular,const DeepCollectionEquality().hash(_ratingBreakdown),operationalStatus,approvalStatus,createdAt,updatedAt,const DeepCollectionEquality().hash(_openingHours),ownerId,phoneNumber,waNumber,email,websiteUrl,instagramUrl,facebookUrl,description,const DeepCollectionEquality().hash(_galleryImageUrls),pricing,isFurnished,genderPreference,listingType,isRoomAvailable]);
+}
 
 @override
 String toString() {
-  return 'EntityDetail.residence(id: $id, categoryId: $categoryId, subCategoryId: $subCategoryId, name: $name, coverImageUrl: $coverImageUrl, cityName: $cityName, sectorName: $sectorName, latLng: $latLng, streetAddress: $streetAddress, avgRating: $avgRating, totalReviews: $totalReviews, isPopular: $isPopular, ratingBreakdown: $ratingBreakdown, operationalStatus: $operationalStatus, approvalStatus: $approvalStatus, createdAt: $createdAt, updatedAt: $updatedAt, openingHours: $openingHours, ownerId: $ownerId, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, websiteUrl: $websiteUrl, instagramUrl: $instagramUrl, facebookUrl: $facebookUrl, description: $description, galleryImageUrls: $galleryImageUrls, pricing: $pricing, isFurnished: $isFurnished, genderPreference: $genderPreference, listingType: $listingType, isRoomAvailable: $isRoomAvailable)';
+    return 'EntityDetail.residence(id: $id, categoryId: $categoryId, subCategoryId: $subCategoryId, name: $name, coverImageUrl: $coverImageUrl, cityName: $cityName, sectorName: $sectorName, latLng: $latLng, streetAddress: $streetAddress, avgRating: $avgRating, totalReviews: $totalReviews, isPopular: $isPopular, ratingBreakdown: $ratingBreakdown, operationalStatus: $operationalStatus, approvalStatus: $approvalStatus, createdAt: $createdAt, updatedAt: $updatedAt, openingHours: $openingHours, ownerId: $ownerId, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, websiteUrl: $websiteUrl, instagramUrl: $instagramUrl, facebookUrl: $facebookUrl, description: $description, galleryImageUrls: $galleryImageUrls, pricing: $pricing, isFurnished: $isFurnished, genderPreference: $genderPreference, listingType: $listingType, isRoomAvailable: $isRoomAvailable)';
 }
 
 
@@ -437,21 +431,18 @@ $PricingCopyWith<$Res> get pricing {
 
 @JsonSerializable(explicitToJson: true)
 class FoodDetail extends EntityDetail {
-  const FoodDetail({required this.id, required this.categoryId, required this.subCategoryId, required this.name, required this.coverImageUrl, required this.cityName, required this.sectorName, @_latLngJsonConverter required this.latLng, required this.streetAddress, this.avgRating = 0.0, this.totalReviews = 0, this.isPopular = false, final  List<RatingBreakdown> ratingBreakdown = const [], this.operationalStatus = OperationalStatus.defaultStatus, this.approvalStatus = ApprovalStatus.pending, @_timestampJsonConverter required this.createdAt, @_timestampJsonConverter required this.updatedAt, @_openingHoursConverter required final  Map<DayOfWeek, OpeningHours> openingHours, required this.ownerId, this.phoneNumber, this.waNumber, this.email, this.websiteUrl, this.instagramUrl, this.facebookUrl, required this.description, required final  List<String> galleryImageUrls, required final  List<String> menuImageUrls, this.genderPreference, final  String? $type}): _ratingBreakdown = ratingBreakdown,_openingHours = openingHours,_galleryImageUrls = galleryImageUrls,_menuImageUrls = menuImageUrls,$type = $type ?? 'food',super._();
+  const FoodDetail({required this.id, required this.categoryId, required this.subCategoryId, required this.name, required this.coverImageUrl, required this.cityName, required this.sectorName, @_latLngJsonConverter required this.latLng, required this.streetAddress, this.avgRating = 0.0, this.totalReviews = 0, this.isPopular = false,  List<RatingBreakdown> ratingBreakdown = const [], this.operationalStatus = OperationalStatus.defaultStatus, this.approvalStatus = ApprovalStatus.pending, @_timestampJsonConverter required this.createdAt, @_timestampJsonConverter required this.updatedAt, @_openingHoursConverter required  Map<DayOfWeek, OpeningHours> openingHours, required this.ownerId, this.phoneNumber, this.waNumber, this.email, this.websiteUrl, this.instagramUrl, this.facebookUrl, required this.description, required  List<String> galleryImageUrls, required  List<String> menuImageUrls, this.genderPreference,  String? $type}): _ratingBreakdown = ratingBreakdown,_openingHours = openingHours,_galleryImageUrls = galleryImageUrls,_menuImageUrls = menuImageUrls,$type = $type ?? 'food',super._();
   factory FoodDetail.fromJson(Map<String, dynamic> json) => _$FoodDetailFromJson(json);
 
-// Core Identifiers & Basic Info
 @override final  EntityId id;
 @override final  CategoryId categoryId;
 @override final  SubCategoryId subCategoryId;
 @override final  String name;
 @override final  String coverImageUrl;
-// Location
 @override final  String cityName;
 @override final  String sectorName;
 @override@_latLngJsonConverter final  LatLng latLng;
 @override final  String streetAddress;
-// Ratings & Popularity
 @override@JsonKey() final  double avgRating;
 @override@JsonKey() final  int totalReviews;
 @override@JsonKey() final  bool isPopular;
@@ -462,7 +453,6 @@ class FoodDetail extends EntityDetail {
   return EqualUnmodifiableListView(_ratingBreakdown);
 }
 
-// Operational Status & Timestamps
 @override@JsonKey() final  OperationalStatus operationalStatus;
 @override@JsonKey() final  ApprovalStatus approvalStatus;
 @override@_timestampJsonConverter final  DateTime createdAt;
@@ -474,7 +464,6 @@ class FoodDetail extends EntityDetail {
   return EqualUnmodifiableMapView(_openingHours);
 }
 
-// Contact Information
 @override final  UserId ownerId;
 @override final  String? phoneNumber;
 @override final  String? waNumber;
@@ -482,7 +471,6 @@ class FoodDetail extends EntityDetail {
 @override final  String? websiteUrl;
 @override final  String? instagramUrl;
 @override final  String? facebookUrl;
-// Descriptions & Media
 @override final  String description;
  final  List<String> _galleryImageUrls;
 @override List<String> get galleryImageUrls {
@@ -498,7 +486,6 @@ class FoodDetail extends EntityDetail {
   return EqualUnmodifiableListView(_menuImageUrls);
 }
 
-// Specific Attributes
 @override final  GenderPreference? genderPreference;
 
 @JsonKey(name: 'runtimeType')
@@ -518,16 +505,18 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is FoodDetail&&(identical(other.id, id) || other.id == id)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.subCategoryId, subCategoryId) || other.subCategoryId == subCategoryId)&&(identical(other.name, name) || other.name == name)&&(identical(other.coverImageUrl, coverImageUrl) || other.coverImageUrl == coverImageUrl)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.avgRating, avgRating) || other.avgRating == avgRating)&&(identical(other.totalReviews, totalReviews) || other.totalReviews == totalReviews)&&(identical(other.isPopular, isPopular) || other.isPopular == isPopular)&&const DeepCollectionEquality().equals(other._ratingBreakdown, _ratingBreakdown)&&(identical(other.operationalStatus, operationalStatus) || other.operationalStatus == operationalStatus)&&(identical(other.approvalStatus, approvalStatus) || other.approvalStatus == approvalStatus)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&const DeepCollectionEquality().equals(other._openingHours, _openingHours)&&(identical(other.ownerId, ownerId) || other.ownerId == ownerId)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other._galleryImageUrls, _galleryImageUrls)&&const DeepCollectionEquality().equals(other._menuImageUrls, _menuImageUrls)&&(identical(other.genderPreference, genderPreference) || other.genderPreference == genderPreference));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is FoodDetail&&(identical(other.id, id) || other.id == id)&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId)&&(identical(other.subCategoryId, subCategoryId) || other.subCategoryId == subCategoryId)&&(identical(other.name, name) || other.name == name)&&(identical(other.coverImageUrl, coverImageUrl) || other.coverImageUrl == coverImageUrl)&&(identical(other.cityName, cityName) || other.cityName == cityName)&&(identical(other.sectorName, sectorName) || other.sectorName == sectorName)&&(identical(other.latLng, latLng) || other.latLng == latLng)&&(identical(other.streetAddress, streetAddress) || other.streetAddress == streetAddress)&&(identical(other.avgRating, avgRating) || other.avgRating == avgRating)&&(identical(other.totalReviews, totalReviews) || other.totalReviews == totalReviews)&&(identical(other.isPopular, isPopular) || other.isPopular == isPopular)&&const DeepCollectionEquality().equals(other.ratingBreakdown, _ratingBreakdown)&&(identical(other.operationalStatus, operationalStatus) || other.operationalStatus == operationalStatus)&&(identical(other.approvalStatus, approvalStatus) || other.approvalStatus == approvalStatus)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt)&&const DeepCollectionEquality().equals(other.openingHours, _openingHours)&&(identical(other.ownerId, ownerId) || other.ownerId == ownerId)&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.waNumber, waNumber) || other.waNumber == waNumber)&&(identical(other.email, email) || other.email == email)&&(identical(other.websiteUrl, websiteUrl) || other.websiteUrl == websiteUrl)&&(identical(other.instagramUrl, instagramUrl) || other.instagramUrl == instagramUrl)&&(identical(other.facebookUrl, facebookUrl) || other.facebookUrl == facebookUrl)&&(identical(other.description, description) || other.description == description)&&const DeepCollectionEquality().equals(other.galleryImageUrls, _galleryImageUrls)&&const DeepCollectionEquality().equals(other.menuImageUrls, _menuImageUrls)&&(identical(other.genderPreference, genderPreference) || other.genderPreference == genderPreference));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hashAll([runtimeType,id,categoryId,subCategoryId,name,coverImageUrl,cityName,sectorName,latLng,streetAddress,avgRating,totalReviews,isPopular,const DeepCollectionEquality().hash(_ratingBreakdown),operationalStatus,approvalStatus,createdAt,updatedAt,const DeepCollectionEquality().hash(_openingHours),ownerId,phoneNumber,waNumber,email,websiteUrl,instagramUrl,facebookUrl,description,const DeepCollectionEquality().hash(_galleryImageUrls),const DeepCollectionEquality().hash(_menuImageUrls),genderPreference]);
+int get hashCode {
+    return Object.hashAll([runtimeType,id,categoryId,subCategoryId,name,coverImageUrl,cityName,sectorName,latLng,streetAddress,avgRating,totalReviews,isPopular,const DeepCollectionEquality().hash(_ratingBreakdown),operationalStatus,approvalStatus,createdAt,updatedAt,const DeepCollectionEquality().hash(_openingHours),ownerId,phoneNumber,waNumber,email,websiteUrl,instagramUrl,facebookUrl,description,const DeepCollectionEquality().hash(_galleryImageUrls),const DeepCollectionEquality().hash(_menuImageUrls),genderPreference]);
+}
 
 @override
 String toString() {
-  return 'EntityDetail.food(id: $id, categoryId: $categoryId, subCategoryId: $subCategoryId, name: $name, coverImageUrl: $coverImageUrl, cityName: $cityName, sectorName: $sectorName, latLng: $latLng, streetAddress: $streetAddress, avgRating: $avgRating, totalReviews: $totalReviews, isPopular: $isPopular, ratingBreakdown: $ratingBreakdown, operationalStatus: $operationalStatus, approvalStatus: $approvalStatus, createdAt: $createdAt, updatedAt: $updatedAt, openingHours: $openingHours, ownerId: $ownerId, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, websiteUrl: $websiteUrl, instagramUrl: $instagramUrl, facebookUrl: $facebookUrl, description: $description, galleryImageUrls: $galleryImageUrls, menuImageUrls: $menuImageUrls, genderPreference: $genderPreference)';
+    return 'EntityDetail.food(id: $id, categoryId: $categoryId, subCategoryId: $subCategoryId, name: $name, coverImageUrl: $coverImageUrl, cityName: $cityName, sectorName: $sectorName, latLng: $latLng, streetAddress: $streetAddress, avgRating: $avgRating, totalReviews: $totalReviews, isPopular: $isPopular, ratingBreakdown: $ratingBreakdown, operationalStatus: $operationalStatus, approvalStatus: $approvalStatus, createdAt: $createdAt, updatedAt: $updatedAt, openingHours: $openingHours, ownerId: $ownerId, phoneNumber: $phoneNumber, waNumber: $waNumber, email: $email, websiteUrl: $websiteUrl, instagramUrl: $instagramUrl, facebookUrl: $facebookUrl, description: $description, galleryImageUrls: $galleryImageUrls, menuImageUrls: $menuImageUrls, genderPreference: $genderPreference)';
 }
 
 

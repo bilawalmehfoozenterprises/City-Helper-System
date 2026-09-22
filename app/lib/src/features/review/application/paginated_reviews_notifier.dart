@@ -11,7 +11,7 @@ part 'paginated_reviews_notifier.g.dart';
 
 const _reviewsPerPage = 3;
 
-@riverpod
+@Riverpod(name: 'paginatedReviewsNotifierProvider')
 class PaginatedReviewsNotifier extends _$PaginatedReviewsNotifier {
   @override
   Future<ReviewPaginationState> build({

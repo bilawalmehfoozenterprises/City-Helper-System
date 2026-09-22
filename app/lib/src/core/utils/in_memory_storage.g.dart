@@ -6,24 +6,53 @@ part of 'in_memory_storage.dart';
 // RiverpodGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+
+@ProviderFor(inMemoryImageStorage)
+final inMemoryImageStorageProvider = InMemoryImageStorageProvider._();
+
+final class InMemoryImageStorageProvider
+    extends
+        $FunctionalProvider<
+          InMemoryImageStorage,
+          InMemoryImageStorage,
+          InMemoryImageStorage
+        >
+    with $Provider<InMemoryImageStorage> {
+  InMemoryImageStorageProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'inMemoryImageStorageProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$inMemoryImageStorageHash();
+
+  @$internal
+  @override
+  $ProviderElement<InMemoryImageStorage> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  InMemoryImageStorage create(Ref ref) {
+    return inMemoryImageStorage(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(InMemoryImageStorage value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<InMemoryImageStorage>(value),
+    );
+  }
+}
+
 String _$inMemoryImageStorageHash() =>
     r'e474ea2199a614c1e26ae639d9d0097bd2d9783b';
-
-/// See also [inMemoryImageStorage].
-@ProviderFor(inMemoryImageStorage)
-final inMemoryImageStorageProvider =
-    AutoDisposeProvider<InMemoryImageStorage>.internal(
-      inMemoryImageStorage,
-      name: r'inMemoryImageStorageProvider',
-      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-          ? null
-          : _$inMemoryImageStorageHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
-
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef InMemoryImageStorageRef = AutoDisposeProviderRef<InMemoryImageStorage>;
-// ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

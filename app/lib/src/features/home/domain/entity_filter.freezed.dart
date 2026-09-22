@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'entity_filter.dart';
@@ -9,6 +9,7 @@ part of 'entity_filter.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 /// @nodoc
@@ -25,16 +26,21 @@ $EntityFilterCopyWith<EntityFilter> get copyWith => _$EntityFilterCopyWithImpl<E
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is EntityFilter&&(identical(other.sortBy, sortBy) || other.sortBy == sortBy)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
+  final _this = this as EntityFilter;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is EntityFilter&&(identical(other.sortBy, _this.sortBy) || other.sortBy == _this.sortBy)&&(identical(other.sortOrder, _this.sortOrder) || other.sortOrder == _this.sortOrder));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,sortBy,sortOrder);
+int get hashCode {
+  final _this = this as EntityFilter;
+  return Object.hash(runtimeType,_this.sortBy,_this.sortOrder);
+}
 
 @override
 String toString() {
-  return 'EntityFilter(sortBy: $sortBy, sortOrder: $sortOrder)';
+  final _this = this as EntityFilter;
+  return 'EntityFilter(sortBy: ${_this.sortBy}, sortOrder: ${_this.sortOrder})';
 }
 
 
@@ -230,16 +236,18 @@ $FoodFilterCopyWith<FoodFilter> get copyWith => _$FoodFilterCopyWithImpl<FoodFil
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is FoodFilter&&(identical(other.sortBy, sortBy) || other.sortBy == sortBy)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder)&&(identical(other.genderPref, genderPref) || other.genderPref == genderPref));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is FoodFilter&&(identical(other.sortBy, sortBy) || other.sortBy == sortBy)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder)&&(identical(other.genderPref, genderPref) || other.genderPref == genderPref));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,sortBy,sortOrder,genderPref);
+int get hashCode {
+    return Object.hash(runtimeType,sortBy,sortOrder,genderPref);
+}
 
 @override
 String toString() {
-  return 'EntityFilter.food(sortBy: $sortBy, sortOrder: $sortOrder, genderPref: $genderPref)';
+    return 'EntityFilter.food(sortBy: $sortBy, sortOrder: $sortOrder, genderPref: $genderPref)';
 }
 
 
@@ -302,16 +310,18 @@ $ResidenceFilterCopyWith<ResidenceFilter> get copyWith => _$ResidenceFilterCopyW
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is ResidenceFilter&&(identical(other.sortBy, sortBy) || other.sortBy == sortBy)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder)&&(identical(other.isFurnished, isFurnished) || other.isFurnished == isFurnished)&&(identical(other.isRoomAvailable, isRoomAvailable) || other.isRoomAvailable == isRoomAvailable)&&(identical(other.genderPref, genderPref) || other.genderPref == genderPref));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is ResidenceFilter&&(identical(other.sortBy, sortBy) || other.sortBy == sortBy)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder)&&(identical(other.isFurnished, isFurnished) || other.isFurnished == isFurnished)&&(identical(other.isRoomAvailable, isRoomAvailable) || other.isRoomAvailable == isRoomAvailable)&&(identical(other.genderPref, genderPref) || other.genderPref == genderPref));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,sortBy,sortOrder,isFurnished,isRoomAvailable,genderPref);
+int get hashCode {
+    return Object.hash(runtimeType,sortBy,sortOrder,isFurnished,isRoomAvailable,genderPref);
+}
 
 @override
 String toString() {
-  return 'EntityFilter.residence(sortBy: $sortBy, sortOrder: $sortOrder, isFurnished: $isFurnished, isRoomAvailable: $isRoomAvailable, genderPref: $genderPref)';
+    return 'EntityFilter.residence(sortBy: $sortBy, sortOrder: $sortOrder, isFurnished: $isFurnished, isRoomAvailable: $isRoomAvailable, genderPref: $genderPref)';
 }
 
 
@@ -373,16 +383,18 @@ $BasicFilterCopyWith<BasicFilter> get copyWith => _$BasicFilterCopyWithImpl<Basi
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is BasicFilter&&(identical(other.sortBy, sortBy) || other.sortBy == sortBy)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is BasicFilter&&(identical(other.sortBy, sortBy) || other.sortBy == sortBy)&&(identical(other.sortOrder, sortOrder) || other.sortOrder == sortOrder));
 }
 
 
 @override
-int get hashCode => Object.hash(runtimeType,sortBy,sortOrder);
+int get hashCode {
+    return Object.hash(runtimeType,sortBy,sortOrder);
+}
 
 @override
 String toString() {
-  return 'EntityFilter.basic(sortBy: $sortBy, sortOrder: $sortOrder)';
+    return 'EntityFilter.basic(sortBy: $sortBy, sortOrder: $sortOrder)';
 }
 
 

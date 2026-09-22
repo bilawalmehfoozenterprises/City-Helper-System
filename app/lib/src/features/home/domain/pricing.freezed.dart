@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
-// ignore_for_file: type=lint
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pricing.dart';
@@ -9,6 +9,7 @@ part of 'pricing.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 T _$identity<T>(T value) => value;
 
@@ -28,16 +29,21 @@ $PricingCopyWith<Pricing> get copyWith => _$PricingCopyWithImpl<Pricing>(this as
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is Pricing&&(identical(other.cost, cost) || other.cost == cost)&&(identical(other.unit, unit) || other.unit == unit)&&(identical(other.period, period) || other.period == period));
+  final _this = this as Pricing;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Pricing&&(identical(other.cost, _this.cost) || other.cost == _this.cost)&&(identical(other.unit, _this.unit) || other.unit == _this.unit)&&(identical(other.period, _this.period) || other.period == _this.period));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,cost,unit,period);
+int get hashCode {
+  final _this = this as Pricing;
+  return Object.hash(runtimeType,_this.cost,_this.unit,_this.period);
+}
 
 @override
 String toString() {
-  return 'Pricing(cost: $cost, unit: $unit, period: $period)';
+  final _this = this as Pricing;
+  return 'Pricing(cost: ${_this.cost}, unit: ${_this.unit}, period: ${_this.period})';
 }
 
 
@@ -66,7 +72,7 @@ class _$PricingCopyWithImpl<$Res>
 /// Create a copy of Pricing
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') @override $Res call({Object? cost = null,Object? unit = null,Object? period = null,}) {
-  return _then(_self.copyWith(
+  return _then(Pricing(
 cost: null == cost ? _self.cost : cost // ignore: cast_nullable_to_non_nullable
 as double,unit: null == unit ? _self.unit : unit // ignore: cast_nullable_to_non_nullable
 as PricingUnit,period: null == period ? _self.period : period // ignore: cast_nullable_to_non_nullable
@@ -231,16 +237,18 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Pricing&&(identical(other.cost, cost) || other.cost == cost)&&(identical(other.unit, unit) || other.unit == unit)&&(identical(other.period, period) || other.period == period));
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _Pricing&&(identical(other.cost, cost) || other.cost == cost)&&(identical(other.unit, unit) || other.unit == unit)&&(identical(other.period, period) || other.period == period));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,cost,unit,period);
+int get hashCode {
+    return Object.hash(runtimeType,cost,unit,period);
+}
 
 @override
 String toString() {
-  return 'Pricing(cost: $cost, unit: $unit, period: $period)';
+    return 'Pricing(cost: $cost, unit: $unit, period: $period)';
 }
 
 

@@ -7,6 +7,7 @@ import 'package:app/src/themes/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 
@@ -31,7 +32,7 @@ class Robot {
   static const _desktopSize = Size(1000, 1000);
 
   // Entry Point with Real App
-  Future<ProviderContainer> pumpMyApp({List<Override> overrides = const []}) async {
+  Future<ProviderContainer> pumpMyApp({List<dynamic> overrides = const []}) async {
     final container = AppBootStrap().createFakeProviderContainer(overrides: overrides);
     await _pumpAppWithContainer(const MyApp(), container);
     return container;

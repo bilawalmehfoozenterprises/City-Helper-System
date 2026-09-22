@@ -6,7 +6,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'ad_interaction_controller.g.dart';
 
-@riverpod
+@Riverpod(name: 'adInteractionNotifierProvider')
 class AdInteractionNotifier extends _$AdInteractionNotifier {
   // --- State ---
   Timer? _impressionTimer;
